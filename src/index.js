@@ -5,7 +5,7 @@ function component() {
     const element = document.createElement('div');
   
     // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = "hello";
+    element.innerHTML = "hello 2";
     element.classList.add("hello");
 
     const myIcon = new Image();
