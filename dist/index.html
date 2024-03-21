@@ -7,7 +7,133 @@
     <link rel="stylesheet" href="../src/style.css">
 </head>
 <body>
-    <h1>Test 2</h1>
+
+
+    <nav id="navbar">
+        <div id="navbar-logo">FUGA POR UN DOGO</div>
+        <ul>
+            <li><a href="">INICIO</a></li>
+            <li><a href="">TOP 10</a></li>
+            <li><a href="">AGREGAR CARRETA</a></li>
+            <li><a href="">MI PERFIL</a></li>
+            <li>BARRA DE BUSQUEDA</li>
+        </ul>
+    </nav>
+
+        <div class="textInputContainer">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre">
+        </div>
+
+        <div class="textInputContainer">
+            <label for="direccion">Dirección</label>
+            <input type="text" name="direccion" id="direccion">
+        </div>
+
+        <div class="textInputContainer">
+            <label for="ubicacionUrl">Ubicación URL</label>
+            <input type="text" name="ubicacionUrl" id="ubicacionUrl">
+        </div>
+
+        <div class="metodosPagoContainer">
+            <div>Métodos de pago</div>
+
+            <div class="opcionPago">
+                <input type="checkbox" name="efectivo" id="efectivo">
+                <label for="efectivo">Efectivo</label>
+            </div>
+    
+            <div class="opcionPago">
+                <input type="checkbox" name="tarjeta" id="tarjeta">
+                <label for="tarjeta">Tarjeta</label>
+            </div>
+    
+            <div class="opcionPago">
+                <input type="checkbox" name="tap" id="tap">
+                <label for="tap">Tap to pay €</label>
+            </div>
+    
+            <div class="opcionPago">
+                <input type="checkbox" name="transferencia" id="transferencia">
+                <label for="transferencia">Transferencia</label>
+            </div>
+    
+            <div class="opcionPago">
+                <input type="checkbox" name="otro" id="otro">
+                <label for="otro">Otro</label>
+                <input type="text" name="otroDesc" id="otroDesc">
+            </div>
+        </div>
+
+        <div class="horariosContainer">
+            <div>Horarios</div>
+            <div>
+                <button class="horarioDia off">L</button>
+                <button class="horarioDia off">M</button>
+                <button class="horarioDia off">Mi</button>
+                <button class="horarioDia off">J</button>
+                <button class="horarioDia off">V</button>
+                <button class="horarioDia off">S</button>
+                <button class="horarioDia off">D</button>
+            </div>
+            <div class="horarioGeneralContainer">
+                <input type="time" name="horaAbierto" id="horaAbierto"> - <input type="time" name="horaCerrado" id="horaCerrado">
+            </div>
+
+            <div class="horarioIndividual">
+                <div class="diaHorario">Lunes</div>
+                <div class="rangoHorarios">
+                    <input type="time" name="lunesAbierto" id="lunesAbierto"> - <input type="time" name="lunesCierra" id="lunesCierra">
+                </div>
+                <input type="checkbox" name="lunesCerrado" id="lunesCerrado">
+            </div>
+            <div class="horarioIndividual">
+                <div class="diaHorario">Martes</div>
+                <div  class="rangoHorarios">
+                    <input type="time" name="martesAbierto" id="martesAbierto"> - <input type="time" name="martesCierra" id="martesCierra">
+                </div>
+                <input type="checkbox" name="martesCerrado" id="martesCerrado">
+            </div>
+            <div class="horarioIndividual">
+                <div class="diaHorario">Miércoles</div>
+                <div class="rangoHorarios">
+                    <input type="time" name="miercolesAbierto" id="miercolesAbierto"> - <input type="time" name="miercolesCierra" id="miercolesCierra">
+                </div>
+                <input type="checkbox" name="miercolesCerrado" id="miercolesCerrado">
+            </div>
+            <div class="horarioIndividual">
+                <div class="diaHorario">Jueves</div>
+                <div class="rangoHorarios">
+                    <input type="time" name="juevesAbierto" id="juevesAbierto"> - <input type="time" name="juevesCierra" id="juevesCierra">
+                </div>
+                <input type="checkbox" name="juevesCerrado" id="juevesCerrado">
+            </div>
+            <div class="horarioIndividual">
+                <div class="diaHorario">Viernes</div>
+                <div class="rangoHorarios">
+                    <input type="time" name="viernesAbierto" id="viernesAbierto"> - <input type="time" name="viernesCierra" id="viernesCierra">
+                </div>
+                <input type="checkbox" name="viernesCerrado" id="viernesCerrado">
+            </div>
+            <div class="horarioIndividual">
+                <div class="diaHorario">Sábado</div>
+                <div class="rangoHorarios">
+                    <input type="time" name="sabadoAbierto" id="sabadoAbierto"> - <input type="time" name="sabadoCierra" id="sabadoCierra">
+                </div>
+                <input type="checkbox" name="sabadoCerrado" id="sabadoCerrado">
+            </div>
+            <div class="horarioIndividual">
+                <div class="diaHorario">Domingo</div>
+                <div class="rangoHorarios">
+                    <input type="time" name="domingoAbierto" id="domingoAbierto"> - <input type="time" name="domingoCierra" id="domingoCierra">
+                </div>
+                <input type="checkbox" name="domingoCerrado" id="domingoCerrado">
+            </div>
+        </div>
+
+        <button id="guardarCarreta">Guardar</button>
+
+
     <div id="content"></div>
     <script src="bundle.js"></script>
 </body>
