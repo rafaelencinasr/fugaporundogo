@@ -24,11 +24,11 @@ function component() {
             alert('Could not fetch smoothies');
           }
           if(data){
-            console.log(data);
+            //console.log(data);
           }
       }
 
-      //fetchSmoothies();
+      fetchSmoothies();
 
     return element;
 
@@ -76,7 +76,7 @@ const domingoCierraInput = document.querySelector('#domingoCierra');
 const domingoCerradoInput = document.querySelector('#domingoCerrado');
 
 botonGuardar.addEventListener("click", async ()=>{
-  console.log("Boton guardar picado");
+  //console.log("Boton guardar picado");
   let nombre = nombreInput.value;
   let direccion = direccionInput.value;
   let ubicacionurl = ubicacionUrlInput.value;
@@ -137,6 +137,68 @@ botonGuardar.addEventListener("click", async ()=>{
     .insert([{nombre, direccion, ubicacionurl, metodosdepago, lunes, martes, miercoles, jueves, viernes, sabado, domingo}])
     .select()
     if(data){
-      console.log(data);
+      //console.log(data);
     }
+})
+
+let activeButtonsArray = [false, false, false, false, false, false, false]
+const horaAbierto = document.querySelector("#horaAbierto");
+const horaCerrado = document.querySelector("#horaCerrado");
+
+horaAbierto.addEventListener('change', ()=>{
+  console.log("Cambio horario abierto");
+  applyGeneralHours();
+})
+horaCerrado.addEventListener('change', ()=>{
+  console.log("Cambio horario cerrado");
+  applyGeneralHours();
+})
+
+function checkActiveButtons(){
+  /*
+  const horarioL = document.querySelector("#horarioL");
+  const horarioM = document.querySelector("#horarioM");
+  const horarioMi = document.querySelector("#horarioMi");
+  const horarioJ = document.querySelector("#horarioJ");
+  const horarioV = document.querySelector("#horarioV");
+  const horarioS = document.querySelector("#horarioS");
+  const horarioD = document.querySelector("#horarioD");
+  */
+  nodelistBotonesHorarios.forEach((node, index)=>{
+    if(node.classList.contains("onButton")){
+      activeButtonsArray[index] = true;
+    }
+    else{
+      activeButtonsArray[index] = false;
+    }
+  })
+  applyGeneralHours();
+}
+
+
+
+function applyGeneralHours(){
+  const nodelistHorarioGeneralAbierto = document.querySelectorAll(".horarioGeneralAbierto");
+  const nodelistHorarioGeneralCerrado = document.querySelectorAll(".horarioGeneralCerrado");
+  activeButtonsArray.forEach((element, index)=>{
+    if(element){
+      nodelistHorarioGeneralAbierto[index].value = horaAbierto.value;
+      nodelistHorarioGeneralCerrado[index].value = horaCerrado.value;
+    }
+    else{
+      nodelistHorarioGeneralAbierto[index].value = '';
+      nodelistHorarioGeneralCerrado[index].value = '';
+    }
+  })
+
+}
+
+const nodelistBotonesHorarios = document.querySelectorAll(".horarioDia");
+//console.log(nodelistBotonesHorarios);
+nodelistBotonesHorarios.forEach((node, index)=>{
+  node.addEventListener("click", ()=>{
+    
+    node.classList.toggle("onButton");
+    checkActiveButtons();
+  })
 })

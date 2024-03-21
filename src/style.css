@@ -1,25 +1,133 @@
-.hello{
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+:root{
+    --active-button: #0085FF;
+    --clicked-button: #0170d8;
+  }
+
+body, html{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 600;
 }
 
-h1{
-    color: blue;
+#navbar{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & > #navbar-logo{
+        font-weight: 600;
+        font-size: 72px;
+        font-style: italic;
+    }
+    & > #navbar-links{
+        display: flex;
+        gap: 40px;
+        flex-direction: row;
+        list-style-type: none;
+        & > li > a{
+            text-decoration: none;
+            color: white;
+            font-weight: 800;
+        }
+    }
 }
 
-img{
-    width: 100px;
-    height: auto;
+.pageTitle{
+    font-size: 40px;
+    font-weight: 600;
+    font-style: italic;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 15px;
 }
 
 .textInputContainer{
     display: flex;
     flex-direction: column;
     max-width: 50%;
-    color: red;
+    color: white;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.section-header{
+    font-size: 20px;
+}
+
+.sectionContainer{
+    margin-bottom: 20px;
+    max-width: 50%;
+}
+
+input[type="text"],
+input[type="time"]{
+  /* padding: var(--padding-inputs);
+  border: var(--width-input-border) solid;
+  border-radius: var(--radius-inputs); */
+    background-color: black;
+    border: solid 2px white;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 600;
 }
 
 .opcionPago{
-    color: blue;
+    font-weight: 300;
+    color: white;
+}
+
+.horariosContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.horarioDia{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    border: solid 2px white;
+    border-radius: 100%;
+    &:hover{
+        background-color: var(--active-button);
+    }
+    &:active{
+        background-color: var(--clicked-button);
+        box-shadow: inset 0px 10px 15px -3px rgba(0,0,0,0.1); ;
+    }
+}
+
+.onButton{
+    background-color: var(--active-button);
+    &:hover{
+        background-color: var(--clicked-button);
+    }
+    &:active{
+        background-color: var(--active-button);
+        box-shadow: inset 0px 10px 15px -3px rgba(0,0,0,0.1); ;
+    }
+}
+
+#horarios-general{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    & > .horarioGeneralContainer{
+        margin: 0 auto;
+    }
 }
 
 .horarioIndividual{
