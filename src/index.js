@@ -139,6 +139,8 @@ botonGuardar.addEventListener("click", async ()=>{
     if(data){
       //console.log(data);
     }
+
+    alert("Nueva carreta creada!")
 })
 
 let activeButtonsArray = [false, false, false, false, false, false, false]

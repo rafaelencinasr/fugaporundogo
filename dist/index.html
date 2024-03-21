@@ -19,9 +19,9 @@
             <li>BARRA DE BUSQUEDA</li>
         </ul>
     </nav>
-
+    <h2 class="pageTitle">Agreagar una carreta</h2>
     <div id="content">
-        <h2 class="pageTitle">Agreagar una carreta</h2>
+        
         <div class="textInputContainer sectionContainer">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre">
@@ -84,58 +84,73 @@
                 </div>
             </div>
 
-            <div class="horarioIndividual">
-                <div class="diaHorario">Lunes</div>
-                <div class="rangoHorarios">
-                    <input type="time" name="lunesAbierto" id="lunesAbierto" class="horarioGeneralAbierto"> - <input type="time" name="lunesCierra" id="lunesCierra" class="horarioGeneralCerrado">
+            <div id="horariosIndividualesContainer">
+                
+                <div class="horarioIndividual">
+                    <div id="cerradoColumn">Cerrado?</div>
+                    <div class="diaHorario">Lunes</div>
+                    <div class="rangoHorarios">
+                        <input type="time" name="lunesAbierto" id="lunesAbierto" class="horarioGeneralAbierto"> - <input type="time" name="lunesCierra" id="lunesCierra" class="horarioGeneralCerrado">
+                    </div>
+                    <input type="checkbox" name="lunesCerrado" id="lunesCerrado" >
                 </div>
-                <input type="checkbox" name="lunesCerrado" id="lunesCerrado" >
-            </div>
-            <div class="horarioIndividual">
-                <div class="diaHorario">Martes</div>
-                <div  class="rangoHorarios">
-                    <input type="time" name="martesAbierto" id="martesAbierto" class="horarioGeneralAbierto"> - <input type="time" name="martesCierra" id="martesCierra" class="horarioGeneralCerrado">
+                <div class="horarioIndividual">
+                    <div class="diaHorario">Martes</div>
+                    <div  class="rangoHorarios">
+                        <input type="time" name="martesAbierto" id="martesAbierto" class="horarioGeneralAbierto"> - <input type="time" name="martesCierra" id="martesCierra" class="horarioGeneralCerrado">
+                    </div>
+                    <input type="checkbox" name="martesCerrado" id="martesCerrado">
                 </div>
-                <input type="checkbox" name="martesCerrado" id="martesCerrado">
-            </div>
-            <div class="horarioIndividual">
-                <div class="diaHorario">Miércoles</div>
-                <div class="rangoHorarios">
-                    <input type="time" name="miercolesAbierto" id="miercolesAbierto" class="horarioGeneralAbierto"> - <input type="time" name="miercolesCierra" id="miercolesCierra" class="horarioGeneralCerrado">
+                <div class="horarioIndividual">
+                    <div class="diaHorario">Miércoles</div>
+                    <div class="rangoHorarios">
+                        <input type="time" name="miercolesAbierto" id="miercolesAbierto" class="horarioGeneralAbierto"> - <input type="time" name="miercolesCierra" id="miercolesCierra" class="horarioGeneralCerrado">
+                    </div>
+                    <input type="checkbox" name="miercolesCerrado" id="miercolesCerrado">
                 </div>
-                <input type="checkbox" name="miercolesCerrado" id="miercolesCerrado">
-            </div>
-            <div class="horarioIndividual">
-                <div class="diaHorario">Jueves</div>
-                <div class="rangoHorarios">
-                    <input type="time" name="juevesAbierto" id="juevesAbierto" class="horarioGeneralAbierto"> - <input type="time" name="juevesCierra" id="juevesCierra" class="horarioGeneralCerrado">
+                <div class="horarioIndividual">
+                    <div class="diaHorario">Jueves</div>
+                    <div class="rangoHorarios">
+                        <input type="time" name="juevesAbierto" id="juevesAbierto" class="horarioGeneralAbierto"> - <input type="time" name="juevesCierra" id="juevesCierra" class="horarioGeneralCerrado">
+                    </div>
+                    <input type="checkbox" name="juevesCerrado" id="juevesCerrado">
                 </div>
-                <input type="checkbox" name="juevesCerrado" id="juevesCerrado">
-            </div>
-            <div class="horarioIndividual">
-                <div class="diaHorario">Viernes</div>
-                <div class="rangoHorarios">
-                    <input type="time" name="viernesAbierto" id="viernesAbierto" class="horarioGeneralAbierto"> - <input type="time" name="viernesCierra" id="viernesCierra" class="horarioGeneralCerrado">
+                <div class="horarioIndividual">
+                    <div class="diaHorario">Viernes</div>
+                    <div class="rangoHorarios">
+                        <input type="time" name="viernesAbierto" id="viernesAbierto" class="horarioGeneralAbierto"> - <input type="time" name="viernesCierra" id="viernesCierra" class="horarioGeneralCerrado">
+                    </div>
+                    <input type="checkbox" name="viernesCerrado" id="viernesCerrado">
                 </div>
-                <input type="checkbox" name="viernesCerrado" id="viernesCerrado">
-            </div>
-            <div class="horarioIndividual">
-                <div class="diaHorario">Sábado</div>
-                <div class="rangoHorarios">
-                    <input type="time" name="sabadoAbierto" id="sabadoAbierto" class="horarioGeneralAbierto"> - <input type="time" name="sabadoCierra" id="sabadoCierra" class="horarioGeneralCerrado">
+                <div class="horarioIndividual">
+                    <div class="diaHorario">Sábado</div>
+                    <div class="rangoHorarios">
+                        <input type="time" name="sabadoAbierto" id="sabadoAbierto" class="horarioGeneralAbierto"> - <input type="time" name="sabadoCierra" id="sabadoCierra" class="horarioGeneralCerrado">
+                    </div>
+                    <input type="checkbox" name="sabadoCerrado" id="sabadoCerrado">
                 </div>
-                <input type="checkbox" name="sabadoCerrado" id="sabadoCerrado">
-            </div>
-            <div class="horarioIndividual">
-                <div class="diaHorario">Domingo</div>
-                <div class="rangoHorarios">
-                    <input type="time" name="domingoAbierto" id="domingoAbierto" class="horarioGeneralAbierto"> - <input type="time" name="domingoCierra" id="domingoCierra" class="horarioGeneralCerrado">
+                <div class="horarioIndividual">
+                    <div class="diaHorario">Domingo</div>
+                    <div class="rangoHorarios">
+                        <input type="time" name="domingoAbierto" id="domingoAbierto" class="horarioGeneralAbierto"> - <input type="time" name="domingoCierra" id="domingoCierra" class="horarioGeneralCerrado">
+                    </div>
+                    <input type="checkbox" name="domingoCerrado" id="domingoCerrado">
                 </div>
-                <input type="checkbox" name="domingoCerrado" id="domingoCerrado">
             </div>
         </div>
 
-        <button id="guardarCarreta">Guardar</button>
+        <button id="guardarCarreta">
+            <div class="decorationContainer">
+                <div class="buttonDecoration"></div>
+                <div class="buttonDecoration"></div>
+            </div>
+            GUARDAR
+            <div class="decorationContainer">
+                <div class="buttonDecoration"></div>
+                <div class="buttonDecoration"></div>
+            </div>
+        </button>
+        <!-- <span class="buttonDecoration">=</span>< -->
 
 
     </div>
