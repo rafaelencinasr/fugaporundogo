@@ -2,39 +2,6 @@ import './style.css';
 import Icon from './happyface.png';
 import supabase from './config/supabaseClient';
 
-function component() {
-    const element = document.createElement('div');
-  
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = "";
-    element.classList.add("hello");
-
-    const myIcon = new Image();
-    myIcon.src = Icon;
-  
-    //element.appendChild(myIcon);
-    
-  //Fetch a la base da datos
-      const fetchSmoothies = async () =>{
-        const {data, error} = await supabase
-          .from('carretas')
-          .select()
-
-          if(error){
-            alert('Could not fetch smoothies');
-          }
-          if(data){
-            //console.log(data);
-          }
-      }
-
-      fetchSmoothies();
-
-    return element;
-
-  }
-  
-  document.body.appendChild(component());
 
 const botonGuardar =  document.querySelector('#guardarCarreta');
 const nombreInput = document.querySelector('#nombre');
@@ -74,6 +41,43 @@ const sabadoCerradoInput = document.querySelector('#sabadoCerrado');
 const domingoAbiertoInput = document.querySelector('#domingoAbierto');
 const domingoCierraInput = document.querySelector('#domingoCierra');
 const domingoCerradoInput = document.querySelector('#domingoCerrado');
+
+const guardarMenuBtn = document.querySelector("#guardarMenu");
+
+
+function component() {
+    const element = document.createElement('div');
+  
+    // Lodash, currently included via a script, is required for this line to work
+    element.innerHTML = "";
+    element.classList.add("hello");
+
+    const myIcon = new Image();
+    myIcon.src = Icon;
+  
+    //element.appendChild(myIcon);
+    
+  //Fetch a la base da datos
+      const fetchSmoothies = async () =>{
+        const {data, error} = await supabase
+          .from('carretas')
+          .select()
+
+          if(error){
+            alert('Could not fetch smoothies');
+          }
+          if(data){
+            //console.log(data);
+          }
+      }
+
+      fetchSmoothies();
+
+    return element;
+
+  }
+  
+  document.body.appendChild(component());
 
 botonGuardar.addEventListener("click", async ()=>{
   //console.log("Boton guardar picado");
@@ -204,3 +208,91 @@ nodelistBotonesHorarios.forEach((node, index)=>{
     checkActiveButtons();
   })
 })
+
+const tableBody = document.querySelector("#tableBody");
+const addMenuItemBtn = document.querySelector("#addMenuItem");
+
+function addMenuItem(id){
+  let tableRow = document.createElement("tr");
+  let td1 = document.createElement("td");
+  let td2 = document.createElement("td");
+  let td3 = document.createElement("td");
+  let deleteOptionBtn = document.createElement("button");
+  let inputText = document.createElement("input");
+  let inputNumber = document.createElement("input"); 
+
+  deleteOptionBtn.classList.add("addSectionBtn", "deleteOption");
+  deleteOptionBtn.textContent = '-';
+  deleteOptionBtn.addEventListener("click", ()=>{
+    checkEmptyTableBody();
+    deleteOptionBtn.parentElement.parentElement.remove();
+  })
+  inputText.type = "text";
+  inputNumber.type = "number";
+
+  td1.append(deleteOptionBtn);
+  td2.append(inputText);
+  td3.append(inputNumber);
+
+  tableRow.append(td1, td2, td3);
+  tableRow.id = id;
+  tableRow.classList.add("tableRowContainer")
+  
+  tableBody.append(tableRow);
+}
+
+let id = 0;
+
+addMenuItem(id);
+
+async function checkEmptyTableBody(){
+  
+  setTimeout(() => {
+    let tableBody = document.querySelector("#tableBody"); 
+    if(tableBody.childElementCount<1){
+      console.log("TableBody is empty!");
+      addMenuItem(id);
+    }
+  }, 1);
+}
+
+addMenuItemBtn.addEventListener("click", ()=>{
+  console.log("new menu item");
+  addMenuItem(id);
+  id++;
+})
+
+guardarMenuBtn.addEventListener("click", ()=>{
+  console.log("Guardar menu!");
+  saveMenu()
+})
+
+async function saveMenu(){
+  let allMenuItemsNodelist = document.querySelectorAll(".tableRowContainer");
+  console.log(allMenuItemsNodelist);
+  allMenuItemsNodelist.forEach(async (node)=>{
+    let platillo = node.childNodes[1].childNodes[0].value;
+    let precio = node.childNodes[2].childNodes[0].value;
+    let carreta_id = 1;
+    console.log(`Item: "${platillo}"..... $${precio}`);
+
+    const {data, error} = await supabase
+    .from('menu')
+    .insert([{platillo, precio, carreta_id}])
+    .select()
+    if(data){
+      console.log(data);
+    }
+    })
+  /*
+  const {data, error} = await supabase
+  .from('menu')
+  .insert([{nombre, direccion, ubicacionurl, metodosdepago, lunes, martes, miercoles, jueves, viernes, sabado, domingo}])
+  .select()
+  if(data){
+    //console.log(data);
+  }
+*/
+
+}
+

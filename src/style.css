@@ -2,6 +2,7 @@
 :root{
     --active-button: #0085FF;
     --clicked-button: #0170d8;
+    --hover-fancy-button: rgb(196, 0, 0);
   }
 
 body, html{
@@ -55,14 +56,20 @@ body, html{
 }
 
 #content{
-    margin: 0  1em;
-    
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
+    margin: 0 100px;
+}
+
+.columnContainer{
+    border: 1px solid red;
 }
 
 .textInputContainer{
     display: flex;
     flex-direction: column;
-    max-width: 50%;
     color: white;
     gap: 8px;
     margin-bottom: 10px;
@@ -75,11 +82,11 @@ body, html{
 
 .sectionContainer{
     margin-bottom: 20px;
-    max-width: 50%;
 }
 
 input[type="text"],
-input[type="time"]{
+input[type="time"],
+input[type="number"]{
   /* padding: var(--padding-inputs);
   border: var(--width-input-border) solid;
   border-radius: var(--radius-inputs); */
@@ -170,6 +177,7 @@ input[type="time"]{
 }
 
 #guardarCarreta{
+    grid-area: 2 / 1 / 3 / 3;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -186,6 +194,10 @@ input[type="time"]{
     text-shadow: 0px        4px         0px         rgba(255, 188, 17, 1);
     &:hover{
         cursor: pointer;
+        color: var(--hover-fancy-button);
+        & .buttonDecoration{
+            background-color: var(--hover-fancy-button);
+        }
     }
 }
 
@@ -204,4 +216,67 @@ input[type="time"]{
     content: '';
     background-color: red;
     box-shadow: 0px        5px         0px         rgba(255, 188, 17, 1);
+}
+
+.optional{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.optionalSectionHeader{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.addSectionBtn{
+    background-color: var(--active-button);
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    width: 33px;
+    height: 33px;
+    border: 2px solid white;
+    border-radius: 100%;
+    &:hover{
+        background-color: var(--clicked-button);
+    }
+    &:active{
+        background-color: var(--clicked-button);
+        box-shadow: inset 0px 10px 15px -3px rgba(0,0,0,0.1); ;
+    }
+}
+
+.deleteOption{
+    background-color: red;
+    &:hover{
+        background-color: var(--hover-fancy-button);
+    }
+    &:active{
+        background-color: red;
+        box-shadow: inset 0px 10px 15px -3px rgba(0,0,0,0.1); ;
+    }
+}
+
+#menuInputTable{
+    border-spacing: 5px;
+}
+
+#optionalMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nuevoPlatillo{
+    box-sizing: border-box;
+    width: fit-content;
+    height: auto;
+    border-radius: 33px;
+    padding: 5px 10px;
+    text-align: center;
 }
