@@ -21,7 +21,8 @@
     </nav>
     <h2 class="pageTitle">Agreagar una carreta</h2>
     <div id="content">
-        
+        <div id="leftContainer" class="columnContainer">
+                   
         <div class="textInputContainer sectionContainer">
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre" id="nombre">
@@ -139,6 +140,58 @@
             </div>
         </div>
 
+        <!-- <span class="buttonDecoration">=</span>< -->
+
+        </div>
+<!-- ------------------------------------------------- -->
+        <div id="rightContainer" class="columnContainer">
+            <div class="optional">
+                <div class="optionalSectionHeader">
+                    <button class="addSectionBtn">+</button>
+                    <div>Foto (opcional)</div>
+                </div>
+                <div id="optionalPicture"></div>
+            </div>
+            <div class="optional">
+                <div class="optionalSectionHeader">
+                    <button class="addSectionBtn">+</button>
+                    <div>Complementos de barra (opcional)</div>
+                </div>
+                <div id="optionalBarra"></div>
+            </div>
+            <div class="optional">
+                <div class="optionalSectionHeader">
+                    <button class="addSectionBtn">+</button>
+                    <div>Menu (opcional)</div>
+                </div>
+                <div id="optionalMenu">
+
+                    <table id="menuInputTable">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Item</th>
+                            <th>Precio</th>
+                          </tr>
+                        </thead>
+                        <tbody id="tableBody">
+                        </tbody>
+                    </table>
+
+                    <button class="addSectionBtn nuevoPlatillo" id="addMenuItem">+ Nuevo platillo</button>
+                </div>
+            </div>
+            <div class="optional">
+                <div class="optionalSectionHeader">
+                    <button class="addSectionBtn">+</button>
+                    <div>Mesas (opcional)</div>
+                </div>
+                <div id="optionalMesas">
+                </div>
+            </div>
+            <button id="guardarMenu">Guardar menu solamente</button>
+        </div>
+<!-- ------------------------------------------------- -->
         <button id="guardarCarreta">
             <div class="decorationContainer">
                 <div class="buttonDecoration"></div>
@@ -150,10 +203,18 @@
                 <div class="buttonDecoration"></div>
             </div>
         </button>
-        <!-- <span class="buttonDecoration">=</span>< -->
-
-
     </div>
     <script src="bundle.js"></script>
 </body>
 </html>
+
+<!--                           <tr>
+                            <td><button class="addSectionBtn deleteOption">-</button></td>
+                            <td><input type="text"></td>
+                            <td><input type="number" name="" id=""></td>
+                          </tr>
+                          <tr>
+                            <td><button class="addSectionBtn deleteOption">-</button></td>
+                            <td><input type="text"></td>
+                            <td><input type="number" name="" id=""></td>
+                          </tr> -->
