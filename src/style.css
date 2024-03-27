@@ -252,6 +252,7 @@ input[type="time"]{
 
 .deleteOption{
     background-color: red;
+    content: '-';
     &:hover{
         background-color: var(--hover-fancy-button);
     }

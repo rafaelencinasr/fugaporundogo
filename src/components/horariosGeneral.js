@@ -14,12 +14,12 @@ function horariosGeneral(){
     })
 
     inputAbierto.type = 'time';
-    inputAbierto.name = 'horarioAbierto';
-    inputAbierto.id = 'horarioAbierto';
+    inputAbierto.name = 'horaAbierto';
+    inputAbierto.id = 'horaAbierto';
 
     inputCerrado.type = 'time';
-    inputCerrado.name = 'horarioCerrado';
-    inputCerrado.id = 'horarioCerrado';
+    inputCerrado.name = 'horaCerrado';
+    inputCerrado.id = 'horaCerrado';
 
     horarioGeneralContainer.append(inputAbierto, '-', inputCerrado);
 

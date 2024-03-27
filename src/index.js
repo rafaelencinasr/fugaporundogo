@@ -8,6 +8,7 @@ import metodosPago from './components/metodosPago';
 import menuItem from './components/menuItem';
 import horariosContainer from './components/horariosContainer';
 import horariosIndividualesContainer from './components/horariosIndividualesContainer';
+import seccionOpcional from './components/seccionOpcional';
 
 
 
@@ -19,6 +20,14 @@ leftContainer.append(textInput({id: "ubicacionUrl", textContent: "Ubicación URL
 leftContainer.append(metodosPago());
 leftContainer.append(horariosContainer());
 leftContainer.append(horariosIndividualesContainer());
+
+const rightContainer = document.querySelector("#rightContainer2");
+let optionalArray = ['Foto', 'Barra', 'Menu', 'Mesas'];
+
+optionalArray.forEach((element)=>{
+  rightContainer.append(seccionOpcional(element));
+});
+
 
 
 
@@ -172,6 +181,7 @@ botonGuardar.addEventListener("click", async ()=>{
 
 let activeButtonsArray = [false, false, false, false, false, false, false]
 const horaAbierto = document.querySelector("#horaAbierto");
+
 const horaCerrado = document.querySelector("#horaCerrado");
 
 horaAbierto.addEventListener('change', ()=>{
