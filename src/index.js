@@ -2,6 +2,24 @@ import './style.css';
 import Icon from './happyface.png';
 import supabase from './config/supabaseClient';
 
+//Components
+import textInput from './components/textInput';
+import metodosPago from './components/metodosPago';
+import menuItem from './components/menuItem';
+import horariosContainer from './components/horariosContainer';
+
+
+
+
+const leftContainer = document.querySelector("#leftContainer");
+leftContainer.append(textInput({id: "nombre", textContent: "Nombre"}));
+leftContainer.append(textInput({id: "direccion", textContent: "Dirección"}));
+leftContainer.append(textInput({id: "ubicacionUrl", textContent: "Ubicación URL"}));
+leftContainer.append(metodosPago());
+leftContainer.append(horariosContainer());
+
+
+
 
 const botonGuardar =  document.querySelector('#guardarCarreta');
 const nombreInput = document.querySelector('#nombre');
@@ -44,6 +62,8 @@ const domingoCerradoInput = document.querySelector('#domingoCerrado');
 
 const guardarMenuBtn = document.querySelector("#guardarMenu");
 
+let id = 0;
+
 
 function component() {
     const element = document.createElement('div');
@@ -67,7 +87,7 @@ function component() {
             alert('Could not fetch smoothies');
           }
           if(data){
-            //console.log(data);
+            console.log(data);
           }
       }
 
@@ -75,9 +95,10 @@ function component() {
 
     return element;
 
-  }
+}
   
-  document.body.appendChild(component());
+document.body.appendChild(component());
+
 
 botonGuardar.addEventListener("click", async ()=>{
   //console.log("Boton guardar picado");
@@ -212,59 +233,31 @@ nodelistBotonesHorarios.forEach((node, index)=>{
 const tableBody = document.querySelector("#tableBody");
 const addMenuItemBtn = document.querySelector("#addMenuItem");
 
-function addMenuItem(id){
-  let tableRow = document.createElement("tr");
-  let td1 = document.createElement("td");
-  let td2 = document.createElement("td");
-  let td3 = document.createElement("td");
-  let deleteOptionBtn = document.createElement("button");
-  let inputText = document.createElement("input");
-  let inputNumber = document.createElement("input"); 
 
-  deleteOptionBtn.classList.add("addSectionBtn", "deleteOption");
-  deleteOptionBtn.textContent = '-';
-  deleteOptionBtn.addEventListener("click", ()=>{
-    checkEmptyTableBody();
-    deleteOptionBtn.parentElement.parentElement.remove();
-  })
-  inputText.type = "text";
-  inputNumber.type = "number";
 
-  td1.append(deleteOptionBtn);
-  td2.append(inputText);
-  td3.append(inputNumber);
-
-  tableRow.append(td1, td2, td3);
-  tableRow.id = id;
-  tableRow.classList.add("tableRowContainer")
-  
-  tableBody.append(tableRow);
-}
-
-let id = 0;
-
-addMenuItem(id);
-
+tableBody.append(menuItem(id));
+//addMenuItem(id);
+/*
 async function checkEmptyTableBody(){
   
   setTimeout(() => {
     let tableBody = document.querySelector("#tableBody"); 
     if(tableBody.childElementCount<1){
       console.log("TableBody is empty!");
-      addMenuItem(id);
+      tableBody.append(menuItem(id));
     }
   }, 1);
 }
-
+*/
 addMenuItemBtn.addEventListener("click", ()=>{
   console.log("new menu item");
-  addMenuItem(id);
+  tableBody.append(menuItem(id));
   id++;
 })
 
 guardarMenuBtn.addEventListener("click", ()=>{
   console.log("Guardar menu!");
-  saveMenu()
+  saveMenu();
 })
 
 async function saveMenu(){
