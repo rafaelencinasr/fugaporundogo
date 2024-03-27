@@ -7,6 +7,7 @@ import textInput from './components/textInput';
 import metodosPago from './components/metodosPago';
 import menuItem from './components/menuItem';
 import horariosContainer from './components/horariosContainer';
+import horariosIndividualesContainer from './components/horariosIndividualesContainer';
 
 
 
@@ -17,6 +18,7 @@ leftContainer.append(textInput({id: "direccion", textContent: "Dirección"}));
 leftContainer.append(textInput({id: "ubicacionUrl", textContent: "Ubicación URL"}));
 leftContainer.append(metodosPago());
 leftContainer.append(horariosContainer());
+leftContainer.append(horariosIndividualesContainer());
 
 
 
