@@ -1,3 +1,7 @@
+import menuInputTable from "./menuInputTable";
+import addMenuItemBtn from "./addMenuItemBtn.js";
+import menuItem from "./menuItem";
+
 function seccionOpcional(id){
     let seccionOpcional = document.createElement('div');
     let optionalSectionHeader = document.createElement('div');
@@ -18,7 +22,20 @@ function seccionOpcional(id){
             optionalContent.innerHTML = '';
         } else{
             addSectionBtn.textContent = '-';
-            optionalContent.innerHTML = 'Aqui va el contenido opcional'; //menuTable component, upload picture component, etc 
+            if(true){
+                optionalContent.append(menuInputTable());
+                optionalContent.append(addMenuItemBtn());
+                const tableBody2 = document.querySelector("#tableBody");
+                const addMenuItemBtn2 = document.querySelector("#addMenuItem");
+            
+                
+                tableBody2.append(menuItem(1));
+                addMenuItemBtn2.addEventListener("click", ()=>{
+                    console.log("new menu item");
+                    tableBody2.append(menuItem(1));
+                    id++;
+                  })
+            }
         }
         addSectionBtn.classList.toggle("deleteOption");
     })

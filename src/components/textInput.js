@@ -5,7 +5,7 @@ function textInput(info){
 
     textInputContainer.classList.add('textInputContainer', 'sectionContainer');
     
-    label.for = info.id;
+    label.htmlFor = info.id;
     label.textContent = info.textContent;
 
     input.type = 'text';

@@ -21,6 +21,8 @@ function horariosGeneral(){
     inputCerrado.name = 'horaCerrado';
     inputCerrado.id = 'horaCerrado';
 
+    horarioGeneralContainer.classList.add('horarioGeneralContainer');
+
     horarioGeneralContainer.append(inputAbierto, '-', inputCerrado);
 
     horariosGeneral.append(divContainer, horarioGeneralContainer);

@@ -2,9 +2,9 @@ import './style.css';
 import supabase from './config/supabaseClient';
 
 //Components
-import leftContainer from './components/leftContainer';
-import rightContainer from './components/rightContainer';
-import guardarCarretaBtn from './components/guardarCarretaBtn';
+import leftContainer from '../components/leftContainer';
+import rightContainer from '../components/rightContainer';
+import guardarCarretaBtn from '../components/guardarCarretaBtn';
 
 
 const content = document.querySelector('#content');

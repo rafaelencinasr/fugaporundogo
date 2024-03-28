@@ -9,7 +9,7 @@ function opcionPago(info){
     input.name = info.id;
     input.id = info.id;
 
-    label.for = info.id;
+    label.htmlFor = info.id;
     label.textContent = info.textContent;
 
     opcionPago.append(input, label);

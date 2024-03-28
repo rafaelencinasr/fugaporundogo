@@ -21,178 +21,13 @@
     </nav>
     <h2 class="pageTitle">Agreagar una carreta</h2>
     <div id="content">
-        <div id="leftContainer" class="columnContainer">
-               <!--    
-        <div class="textInputContainer sectionContainer">
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre">
-        </div>
-
-        <div class="textInputContainer sectionContainer">
-            <label for="direccion">Dirección</label>
-            <input type="text" name="direccion" id="direccion">
-        </div>
-
-        <div class="textInputContainer sectionContainer">
-            <label for="ubicacionUrl">Ubicación URL</label>
-            <input type="text" name="ubicacionUrl" id="ubicacionUrl">
-        </div>
-
-        <div class="metodosPagoContainer sectionContainer">
-            <div class="section-header">Métodos de pago</div>
-
-            <div class="opcionPago">
-                <input type="checkbox" name="efectivo" id="efectivo">
-                <label for="efectivo">Efectivo</label>
-            </div>
-    
-            <div class="opcionPago">
-                <input type="checkbox" name="tarjeta" id="tarjeta">
-                <label for="tarjeta">Tarjeta</label>
-            </div>
-    
-            <div class="opcionPago">
-                <input type="checkbox" name="tap" id="tap">
-                <label for="tap">Tap to pay €</label>
-            </div>
-    
-            <div class="opcionPago">
-                <input type="checkbox" name="transferencia" id="transferencia">
-                <label for="transferencia">Transferencia</label>
-            </div>
-    
-            <div class="opcionPago">
-                <input type="checkbox" name="otro" id="otro">
-                <label for="otro">Otro</label>
-                <input type="text" name="otroDesc" id="otroDesc">
-            </div>
-        </div>
-
-        <div class="horariosContainer sectionContainer">
-            <div class="section-header ">Horarios</div>
-            <div id="horarios-general">
-                <div>
-                    <button class="horarioDia off" id="horarioL">L</button>
-                    <button class="horarioDia off" id="horarioM">M</button>
-                    <button class="horarioDia off" id="horarioMi">Mi</button>
-                    <button class="horarioDia off" id="horarioJ">J</button>
-                    <button class="horarioDia off" id="horarioV">V</button>
-                    <button class="horarioDia off" id="horarioS">S</button>
-                    <button class="horarioDia off" id="horarioD">D</button>
-                </div>
-                <div class="horarioGeneralContainer">
-                    <input type="time" name="horaAbierto" id="horaAbierto"> - <input type="time" name="horaCerrado" id="horaCerrado">
-                </div>
-            </div>
-
-            <div id="horariosIndividualesContainer">
-                
-                <div class="horarioIndividual">
-                    <div id="cerradoColumn">Cerrado?</div>
-                    <div class="diaHorario">Lunes</div>
-                    <div class="rangoHorarios">
-                        <input type="time" name="lunesAbierto" id="lunesAbierto" class="horarioGeneralAbierto"> - <input type="time" name="lunesCierra" id="lunesCierra" class="horarioGeneralCerrado">
-                    </div>
-                    <input type="checkbox" name="lunesCerrado" id="lunesCerrado" >
-                </div>
-                <div class="horarioIndividual">
-                    <div class="diaHorario">Martes</div>
-                    <div  class="rangoHorarios">
-                        <input type="time" name="martesAbierto" id="martesAbierto" class="horarioGeneralAbierto"> - <input type="time" name="martesCierra" id="martesCierra" class="horarioGeneralCerrado">
-                    </div>
-                    <input type="checkbox" name="martesCerrado" id="martesCerrado">
-                </div>
-                <div class="horarioIndividual">
-                    <div class="diaHorario">Miércoles</div>
-                    <div class="rangoHorarios">
-                        <input type="time" name="miercolesAbierto" id="miercolesAbierto" class="horarioGeneralAbierto"> - <input type="time" name="miercolesCierra" id="miercolesCierra" class="horarioGeneralCerrado">
-                    </div>
-                    <input type="checkbox" name="miercolesCerrado" id="miercolesCerrado">
-                </div>
-                <div class="horarioIndividual">
-                    <div class="diaHorario">Jueves</div>
-                    <div class="rangoHorarios">
-                        <input type="time" name="juevesAbierto" id="juevesAbierto" class="horarioGeneralAbierto"> - <input type="time" name="juevesCierra" id="juevesCierra" class="horarioGeneralCerrado">
-                    </div>
-                    <input type="checkbox" name="juevesCerrado" id="juevesCerrado">
-                </div>
-                <div class="horarioIndividual">
-                    <div class="diaHorario">Viernes</div>
-                    <div class="rangoHorarios">
-                        <input type="time" name="viernesAbierto" id="viernesAbierto" class="horarioGeneralAbierto"> - <input type="time" name="viernesCierra" id="viernesCierra" class="horarioGeneralCerrado">
-                    </div>
-                    <input type="checkbox" name="viernesCerrado" id="viernesCerrado">
-                </div>
-                <div class="horarioIndividual">
-                    <div class="diaHorario">Sábado</div>
-                    <div class="rangoHorarios">
-                        <input type="time" name="sabadoAbierto" id="sabadoAbierto" class="horarioGeneralAbierto"> - <input type="time" name="sabadoCierra" id="sabadoCierra" class="horarioGeneralCerrado">
-                    </div>
-                    <input type="checkbox" name="sabadoCerrado" id="sabadoCerrado">
-                </div>
-                <div class="horarioIndividual">
-                    <div class="diaHorario">Domingo</div>
-                    <div class="rangoHorarios">
-                        <input type="time" name="domingoAbierto" id="domingoAbierto" class="horarioGeneralAbierto"> - <input type="time" name="domingoCierra" id="domingoCierra" class="horarioGeneralCerrado">
-                    </div>
-                    <input type="checkbox" name="domingoCerrado" id="domingoCerrado">
-                </div>
-            </div>
-        </div>
-        -->  
-        <!-- <span class="buttonDecoration">=</span>< -->
-
-        </div>
+        <!-- <div id="leftContainer" class="columnContainer">
+        </div> -->
 <!-- ------------------------------------------------- -->
-        <div id="rightContainer2" class="columnContainer">
-            <div class="optional">
-                <div class="optionalSectionHeader">
-                    <button class="addSectionBtn">+</button>
-                    <div>Foto (opcional)</div>
-                </div>
-                <div id="optionalPicture"></div>
-            </div>
-            <div class="optional">
-                <div class="optionalSectionHeader">
-                    <button class="addSectionBtn">+</button>
-                    <div>Complementos de barra (opcional)</div>
-                </div>
-                <div id="optionalBarra"></div>
-            </div>
-            <div class="optional">
-                <div class="optionalSectionHeader">
-                    <button class="addSectionBtn">+</button>
-                    <div>Menu (opcional)</div>
-                </div>
-                <div id="optionalMenu">
-
-                    <table id="menuInputTable">
-                        <thead>
-                          <tr>
-                            <th></th>
-                            <th>Item</th>
-                            <th>Precio</th>
-                          </tr>
-                        </thead>
-                        <tbody id="tableBody">
-                        </tbody>
-                    </table>
-
-                    <button class="addSectionBtn nuevoPlatillo" id="addMenuItem">+ Nuevo platillo</button>
-                </div>
-            </div>
-            <div class="optional">
-                <div class="optionalSectionHeader">
-                    <button class="addSectionBtn">+</button>
-                    <div>Mesas (opcional)</div>
-                </div>
-                <div id="optionalMesas">
-                </div>
-            </div>
-            <button id="guardarMenu">Guardar menu solamente</button>
-        </div>
+       <!--  <div id="rightContainer" class="columnContainer">
+        </div> -->
 <!-- ------------------------------------------------- -->
-        <button id="guardarCarreta">
+        <!-- <button id="guardarCarreta">
             <div class="decorationContainer">
                 <div class="buttonDecoration"></div>
                 <div class="buttonDecoration"></div>
@@ -202,19 +37,8 @@
                 <div class="buttonDecoration"></div>
                 <div class="buttonDecoration"></div>
             </div>
-        </button>
+        </button> -->
     </div>
     <script src="bundle.js"></script>
 </body>
 </html>
-
-<!--                           <tr>
-                            <td><button class="addSectionBtn deleteOption">-</button></td>
-                            <td><input type="text"></td>
-                            <td><input type="number" name="" id=""></td>
-                          </tr>
-                          <tr>
-                            <td><button class="addSectionBtn deleteOption">-</button></td>
-                            <td><input type="text"></td>
-                            <td><input type="number" name="" id=""></td>
-                          </tr> -->

@@ -14,7 +14,7 @@ function metodosPago(){
     metodosPagoContainer.append(opcionPago({id: "tarjeta", textContent: "Tarjeta"}));
     metodosPagoContainer.append(opcionPago({id: "tap", textContent: "Tap to pay €"}));
     metodosPagoContainer.append(opcionPago({id: "transferencia", textContent: "Transferencia"}));
-    metodosPagoContainer.append(opcionPago({id: "otro", textContent: "Otro", otro: true}));
+    metodosPagoContainer.append(opcionPago({id: "otro", textContent: "Otro: ", otro: true}));
 
     return metodosPagoContainer;
 
