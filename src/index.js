@@ -1,6 +1,44 @@
 import './style.css';
-import supabase from './config/supabaseClient';
+//import supabase from './config/supabaseClient';
+import inicioPage from './pages/inicio';
+import agregarUnaCarreta from './pages/agregarUnaCarreta';
+import pageTitle from './components/pageTitle';
 
+const inicio = document.querySelector('#inicio');
+const top10 = document.querySelector('#top10');
+const agregarCarreta = document.querySelector('#agregarCarreta');
+const miPerfil = document.querySelector('#miPerfil');
+const content = document.querySelector('#content');
+
+content.append(pageTitle('Inicio'));
+  inicioPage()
+
+inicio.addEventListener("click", ()=>{
+  content.innerHTML = '';
+  content.append(pageTitle('Inicio'));
+  inicioPage();
+})
+
+top10.addEventListener("click", ()=>{
+  content.innerHTML = '';
+  content.append(pageTitle('Top 10'));
+  //top10();
+})
+
+agregarCarreta.addEventListener("click", ()=>{
+  content.innerHTML = '';
+  content.append(pageTitle('Agregar Carreta'));
+
+  agregarUnaCarreta();
+})
+
+miPerfil.addEventListener("click", ()=>{
+  content.innerHTML = '';
+  content.append(pageTitle('Mi Perfil'));
+  //miPerfil();
+})
+
+/*
 //Components
 import leftContainer from './components/leftContainer';
 import rightContainer from './components/rightContainer';
@@ -49,41 +87,7 @@ const domingoAbiertoInput = document.querySelector('#domingoAbierto');
 const domingoCierraInput = document.querySelector('#domingoCierra');
 const domingoCerradoInput = document.querySelector('#domingoCerrado');
 
-/*
-function component() {
-    const element = document.createElement('div');
-  
-    // Lodash, currently included via a script, is required for this line to work
-    element.innerHTML = "";
-    element.classList.add("hello");
 
-    const myIcon = new Image();
-    myIcon.src = Icon;
-  
-    //element.appendChild(myIcon);
-    
-  //Fetch a la base da datos
-      const fetchSmoothies = async () =>{
-        const {data, error} = await supabase
-          .from('carretas')
-          .select()
-
-          if(error){
-            alert('Could not fetch smoothies');
-          }
-          if(data){
-            console.log(data);
-          }
-      }
-
-      fetchSmoothies();
-
-    return element;
-
-}
-*/
-  
-//document.body.appendChild(component());
 
 
 botonGuardar.addEventListener("click", async ()=>{
@@ -244,3 +248,4 @@ async function saveMenu(carreta_id){
 
 
 
+*/
