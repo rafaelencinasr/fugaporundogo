@@ -301,6 +301,7 @@ input[type="time"]{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 
@@ -323,6 +324,7 @@ input[type="time"]{
 }
 
 .bookmark{
+    z-index: 2;
     position: absolute;
     right: -10px;
     top: -10px;

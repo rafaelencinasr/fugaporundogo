@@ -143,10 +143,12 @@ function agregarUnaCarreta(){
       "abre": domingoAbiertoInput.value,
       "cierra": domingoCierraInput.value
     }
+
+    let dias_horarios = [lunes, martes, miercoles, jueves, viernes, sabado, domingo];
   
     const {data, error} = await supabase
       .from('carretas')
-      .insert([{nombre, direccion, ubicacionurl, metodosdepago, lunes, martes, miercoles, jueves, viernes, sabado, domingo}])
+      .insert([{nombre, direccion, ubicacionurl, metodosdepago, dias_horarios}])
       .select()
       if(data){
         console.log(data);
