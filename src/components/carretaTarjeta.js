@@ -8,7 +8,7 @@ function carretaTarjeta(data, abierto){
 
     const tarjetaImagen = document.createElement('img');
     tarjetaImagen.classList.add('tarjetaImagen');
-    tarjetaImagen.src = '../src/img/carreta1.png';
+    tarjetaImagen.src = './img/carreta1.png';
     tarjetaImagen.alt = 'Imagen de carreta 1';
     if(!abierto){
         tarjetaImagen.classList.add('carretaCerrada');
