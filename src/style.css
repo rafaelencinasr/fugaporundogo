@@ -16,16 +16,19 @@ body, html{
 }
 
 #navbar{
+    position: relative;
     background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
     & > #navbar-logo{
+        z-index: 2;
         font-weight: 600;
         font-size: 72px;
         font-style: italic;
     }
     & > #navbar-links{
+        z-index: 2;
         display: flex;
         gap: 40px;
         flex-direction: row;
@@ -47,12 +50,19 @@ body, html{
     }
 }
 
+#navbarBgImage{
+    position: absolute;
+    z-index: 0;
+    bottom: -40px;
+}
+
 #content{
     display: grid;
     gap: 25px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr auto;
     margin: 0 100px;
+    margin-top: 25px;
 }
 
 .pageTitle{
@@ -293,6 +303,7 @@ input[type="time"]{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: start;
 }
 
 #carretasCerradas{
@@ -302,6 +313,8 @@ input[type="time"]{
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: start;
+    /* Media query celular => cambiar a  justify-content: center; */
 }
 
 
