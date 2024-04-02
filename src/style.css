@@ -325,6 +325,7 @@ input[type="time"]{
     height: 480px;
     background-color: #E9E9E9;
     margin-bottom: 15px;
+    text-decoration: none;
 
 }
 

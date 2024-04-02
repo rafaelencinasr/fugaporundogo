@@ -1,5 +1,5 @@
 function carretaTarjeta(data, abierto){
-    const carretaTarjeta = document.createElement("div");
+    const carretaTarjeta = document.createElement("a");
     carretaTarjeta.classList.add('carretaTarjeta');
 
     const bookmark = document.createElement('div');
@@ -73,12 +73,12 @@ function carretaTarjeta(data, abierto){
       let cerradoAyer = horarioAyer.cerrado;
       let horaCerradoAyer = horarioAyer.cierra;
     */
-      console.log('-------------------');
-    console.log(data.nombre);
+      //console.log('-------------------');
+    //console.log(data.nombre);
 
     let horaTest = fechaHoy.toLocaleTimeString('en-GB'/*[] , {hour: '2-digit', minute:'2-digit'} */);
     let fechaActual = new Date(`April 1, 2024 ${horaTest}`);
-    console.log('Fecha actual fake : ' +fechaActual);
+    //console.log('Fecha actual fake : ' +fechaActual);
 
     let fechaCierre;
     if(horaCerrado<horaAbierto){
@@ -86,13 +86,13 @@ function carretaTarjeta(data, abierto){
     } else{
         fechaCierre = new Date(`April 1, 2024 ${horaCerrado}`);
     }
-    console.log('Fecha cierre fake : ' + fechaCierre);
+    //console.log('Fecha cierre fake : ' + fechaCierre);
 
     let tiempoParaCierre = (fechaCierre.getTime() - fechaActual.getTime())/60000;   //Minutos
     tiempoParaCierre = Math.abs(Math.ceil(tiempoParaCierre));
     let horasParaCierre = Math.floor(tiempoParaCierre/60)   //horas
     let minutosParaCierre = tiempoParaCierre%60   //Minutos
-    console.log(`Cierra en ${horasParaCierre} horas, ${minutosParaCierre} minutos`);
+    //console.log(`Cierra en ${horasParaCierre} horas, ${minutosParaCierre} minutos`);
 
     let stringTiempoEspera;
     if(horasParaCierre >= 2){
@@ -157,6 +157,8 @@ function carretaTarjeta(data, abierto){
     botonFuga.append(decorationContainer1, 'FUGA', decorationContainer2);
 
     tarjetaCuerpo.append(tarjetaInfo, botonFuga);
+
+    carretaTarjeta.href = `./carretas.html?id=${data.id}`
 
     carretaTarjeta.append(bookmark, tarjetaImagen, tarjetaCuerpo);
 

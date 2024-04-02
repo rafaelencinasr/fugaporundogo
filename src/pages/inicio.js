@@ -35,7 +35,7 @@ async function inicio(){
     //console.log(fechaHoy);
     //console.log(diaHoy);
     //console.log(`${queHoraEs}:${queMinutoEs}:${queSegundoEs}`);
-    console.log("Hora test: " + horaTest);
+    //console.log("Hora test: " + horaTest);
 
     data.forEach((carreta)=>{
       let horarioHoy = carreta.dias_horarios[diaHoy-1];
