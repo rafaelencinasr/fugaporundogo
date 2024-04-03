@@ -1,0 +1,118 @@
+:root{
+    --active-button: #0085FF;
+    --clicked-button: #0170d8;
+    --hover-fancy-button: rgb(196, 0, 0);
+  }
+
+#tituloCarreta{
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    & > .decorationContainer{
+        max-width: 800px;
+    }
+    &:hover{
+        cursor: auto;
+        color: red;
+        & .buttonDecoration{
+            background-color: red;
+        }
+    }
+}
+
+#califcacionesFavorito{
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+#contentCarretas{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#menu{
+    box-sizing: border-box;
+    padding: 0 30px;
+    margin: 0 15px;
+    max-width: 500px;
+    grid-area: 1 / 1 / 2 / 2;
+    height: 450px;
+    background-color: rgba(0, 0, 255, 0.308);
+}
+
+#informacion{
+    grid-area: 1 / 2 / 2 / 3;
+    height: 450px;
+    background-color: rgba(255, 0, 0, 0.274);
+}
+
+#fotos{
+   
+    grid-area: 1 / 3 / 2 / 4;
+    height: 450px;
+    background-color: rgba(0, 128, 0, 0.315);
+}
+
+#resenas{
+    grid-area: 2 / 1 / 3 / 4;
+    height: 450px;
+    background-color: rgba(126, 128, 0, 0.473);
+}
+
+
+.menuItem{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menuText{
+    font-size: 16px;
+}
+
+.itemName {
+    /*background-color: green;*/
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 4px;
+}
+
+.top3::before{
+    position: absolute;
+    left: -20px;
+    content: '⭐';
+}
+
+.itemName:after {
+    content: " ........................................................................................................................................................................................................................................................................................."
+}
+
+.precio {
+    /*background-color: red;*/
+    flex-shrink: 0;
+}
+
+.itemPrice::before{
+    content: "$";
+}
+
+.columnTitle{
+    position: relative;
+    font-size: 30px;
+    text-align: center;
+}
+
+#explicacionTop3{
+    margin: 0 auto;
+    font-size: 12px;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+}

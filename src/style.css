@@ -13,6 +13,7 @@ body, html{
     font-family: "Rubik", sans-serif;
     font-style: normal;
     font-weight: 600;
+    overflow-x: hidden;
 }
 
 #navbar{
@@ -188,7 +189,7 @@ input[type="time"]{
 
 }
 
-#guardarCarreta, .botonFuga{
+#guardarCarreta, .botonFuga, #tituloCarreta{
     grid-area: 3 / 1 / 4 / 3;
     width: 100%;
     display: flex;
@@ -386,3 +387,4 @@ input[type="time"]{
     flex-direction: column;
     justify-content: space-between;
 }
+
