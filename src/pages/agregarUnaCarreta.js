@@ -159,7 +159,7 @@ function agregarUnaCarreta(){
         saveMenu(data[0].id);
       }
   
-      alert("Nueva carreta creada!")
+      alert("Funcion no disponible por el momento")
   })
   
   let activeButtonsArray = [false, false, false, false, false, false, false]
