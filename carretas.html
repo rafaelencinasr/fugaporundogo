@@ -4,12 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carretas</title>
+    <!-- <link rel="stylesheet" href="../src/style.css"> -->
 </head>
 <body>
-    <a href="./index.html">Back to home</a>
-    <h1>Carretas.html</h1>
+    <nav id="navbar">
+        <div id="navbar-logo">FUGA POR UN DOGO</div>
+        <ul id="navbar-links">
+            <li id="inicio"><div>INICIO</div></li>
+            <li id="top10"><a href="./carretas.html?id=35">TOP 10</a></li>
+            <li id="agregarCarreta"><div>AGREGAR CARRETA</div></li>
+            <li id="miPerfil"><div>MI PERFIL</div></li>
+            <li>BARRA DE BUSQUEDA</li>
+        </ul>
+        <img src="./img/navbar-bg.svg" alt="" id="navbarBgImage">
+    </nav>
 
-    <div id="content">
+    <h1 id="tituloCarreta">
+    </h1>
+    <div id="califcacionesFavorito">
+        <div id="calificaiones">⭐⭐⭐⭐⭐ 4.95 (278)</div>
+        <div id="bookmark">Marcado como favorito ⭐</div>
+    </div>
+    <div id="contentCarretas">
+        <div id="menu" class="columnTitle">Menú
+            <div id="explicacionTop3">⭐ = Top 3 de recomendaciones</div>
+        </div>
+        <div id="informacion" class="columnTitle">Información</div>
+        <div id="fotos"></div>
+        <div id="resenas" class="columnTitle">Reseñas</div>
     </div>
     <script src="carretas.js"></script>
 </body>
