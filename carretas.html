@@ -10,7 +10,7 @@
     <nav id="navbar">
         <div id="navbar-logo">FUGA POR UN DOGO</div>
         <ul id="navbar-links">
-            <li id="inicio"><div>INICIO</div></li>
+            <li id="inicio"><a href="./index.html">INICIO</a></li>
             <li id="top10"><a href="./carretas.html?id=35">TOP 10</a></li>
             <li id="agregarCarreta"><div>AGREGAR CARRETA</div></li>
             <li id="miPerfil"><div>MI PERFIL</div></li>
@@ -21,17 +21,148 @@
 
     <h1 id="tituloCarreta">
     </h1>
-    <div id="califcacionesFavorito">
-        <div id="calificaiones">⭐⭐⭐⭐⭐ 4.95 (278)</div>
-        <div id="bookmark">Marcado como favorito ⭐</div>
-    </div>
-    <div id="contentCarretas">
-        <div id="menu" class="columnTitle">Menú
-            <div id="explicacionTop3">⭐ = Top 3 de recomendaciones</div>
+
+    <div id="contentInformacion">
+        <div id="califcacionesFavorito">
+            <div id="calificaiones">⭐⭐⭐⭐⭐ 4.95 (278)</div>
+            <div id="bookmark">Marcado como favorito ⭐</div>
         </div>
-        <div id="informacion" class="columnTitle">Información</div>
-        <div id="fotos"></div>
-        <div id="resenas" class="columnTitle">Reseñas</div>
+        <div id="contentCarretas">
+            <div id="menu">
+                <div class="columnTitle">
+                    Menú
+                </div>
+                <div id="explicacionTop3">⭐ = Top 3 de recomendaciones</div>
+            </div>
+            <div id="informacion">
+                <div class="columnTitle">Información</div>
+                <div id="direccionContainer" class="informacionSectionContainer">
+                    <div class="containerTitle">Dirección</div>
+                    <div id="direccionInfo" class="informacionTexto">C. Jose Carmelo 441, Olivares, 83180 Hermosillo, Son.</div>   
+                </div>
+                <div id="metodosDePagoContainer" class="informacionSectionContainer">
+                    <div class="containerTitle">Métodos de pago</div>
+                    <div id="metodosDePagoInfo" class="informacionTexto"></div>   
+                </div>
+                <div id="horariosContainer" class="informacionSectionContainer">
+                    <div class="containerTitle">Horarios</div>
+                    <div id="horariosInfo" class="informacionTexto">
+                        <table>
+                            <colgroup>
+                            <col style="width: 114px">
+                            <col style="width: 144px">
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th></th>
+                                <th></th>
+                              </tr>
+                            </thead>
+                            <tbody id="horariosTabla">
+<!--                               <tr>
+                                  <td>Lunes</td>
+                                  <td id="horarioLunes">Cerrado</td>   
+                              </tr>
+                              <tr>
+                                <td>Martes</td>
+                                <td id="horarioMartes">Cerrado</td>
+                              </tr>
+                              <tr>
+                                <td>Míercoles</td>
+                                <td id="horarioMiercoles">Cerrado</td>
+                              </tr>
+                              <tr>
+                                <td>Jueves</td>
+                                <td id="horarioJueves">Cerrado</td>
+                              </tr>
+                              <tr>
+                                <td>Viernes</td>
+                                <td id="horarioViernes">Cerrado</td>
+                              </tr>
+                              <tr>
+                                <td>Sábado</td>
+                                <td id="horarioSabado">Cerrado</td>
+                              </tr>
+                              <tr>
+                                <td>Domingo</td>
+                                <td id="horarioDomingo">19:00 - 23:30</td>
+                              </tr> -->
+                            </tbody>
+                            </table>
+                    </div>   
+                </div>
+                <div id="mesasContainer" class="informacionSectionContainer">
+                    <div class="containerTitle">Mesas para comer ahí </div>
+                    <div id="mesasInfo" class="informacionTexto">(proximamente)</div>   
+                </div>
+                <div id="barraContainer" class="informacionSectionContainer">
+                    <div class="containerTitle">Complementos en barra </div>
+                    <div id="barraInfo" class="informacionTexto">(proximamente)<!-- Lechuga  -  Tomate  -  Queso amarillo liquido  -  Cebolla caramelizada  -  Catsup  -  Aderezo chipotle  -  Salsa chiltepín  -  Cilantro  -  Guacamole  -  Chiles gueritos  -  Tocino --></div>   
+                </div>
+                <div id="sugerirCambios"><a href="">✏️ Sugerir cambios a la informacion</a></div>
+            </div>
+            <div id="fotos">
+                <div id="imgCarrusel">
+                    <img class="imagenCarreta" src="./img/carreta1.png" alt="" srcset="">
+                    <img class="imagenCarreta" src="./img/dogo2.jpg" alt="" srcset="">
+                    <img class="imagenCarreta" src="./img/carreta1.png" alt="" srcset="">
+    <!--                 <img class="imagenCarreta" src="./img/dogo2.jpg" alt="" srcset="">
+                    <img class="imagenCarreta" src="./img/carreta1.png" alt="" srcset="">
+                    <img class="imagenCarreta" src="./img/dogo2.jpg" alt="" srcset=""> -->
+                </div>
+            </div>
+            <div id="resenas" class="columnTitle">
+                Reseñas
+                <div><button id="nuevaReseñaBtn">Escribir nueva reseña</button></div>
+                <div id="resenasContainer">
+                    <div class="resena">
+                        <div class="resenaTop">
+                            <div class="resenaTitulo">"Titulo reseña 1"</div>
+                            <div class="resenaCalificacion">⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="resenaFecha">Fecha: 15/04/2024</div>
+                        <div class="resenaAutor">Por: <a href="">rafaelencinasr</a></div>
+                        <p class="resenaCuerpo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium itaque aspernatur quam nesciunt illum ipsa rerum totam doloremque voluptates impedit velit architecto excepturi provident, eius alias voluptas laborum qui dolorem!</p>
+                    </div>
+                    <div class="resena">
+                        <div class="resenaTop">
+                            <div class="resenaTitulo">"Titulo reseña 2"</div>
+                            <div class="resenaCalificacion">⭐⭐⭐</div>
+                        </div>
+                        <div class="resenaFecha">Fecha: 15/04/2024</div>
+                        <div class="resenaAutor">Por: <a href="">rafaelencinasr</a></div>
+                        <p class="resenaCuerpo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium itaque aspernatur quam nesciunt illum ipsa rerum totam doloremque voluptates impedit velit architecto excepturi provident, eius alias voluptas laborum qui dolorem!</p>
+                    </div>
+                    <div class="resena">
+                        <div class="resenaTop">
+                            <div class="resenaTitulo">"Titulo reseña 3"</div>
+                            <div class="resenaCalificacion">⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="resenaFecha">Fecha: 15/04/2024</div>
+                        <div class="resenaAutor">Por: <a href="">rafaelencinasr</a></div>
+                        <p class="resenaCuerpo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium itaque aspernatur quam nesciunt illum ipsa rerum totam doloremque voluptates impedit velit architecto excepturi provident, eius alias voluptas laborum qui dolorem!</p>
+                    </div>
+                    <div class="resena">
+                        <div class="resenaTop">
+                            <div class="resenaTitulo">"Titulo reseña 4"</div>
+                            <div class="resenaCalificacion">⭐</div>
+                        </div>
+                        <div class="resenaFecha">Fecha: 15/04/2024</div>
+                        <div class="resenaAutor">Por: <a href="">rafaelencinasr</a></div>
+                        <p class="resenaCuerpo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium itaque aspernatur quam nesciunt illum ipsa rerum totam doloremque voluptates impedit velit architecto excepturi provident, eius alias voluptas laborum qui dolorem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi molestiae placeat veritatis eveniet itaque deserunt molestias accusamus illo nobis libero quas officia, error odio mollitia dolorum, quos nam amet nulla.</p>
+                    </div>
+                    <div class="resena">
+                        <div class="resenaTop">
+                            <div class="resenaTitulo">"Titulo reseña 5"</div>
+                            <div class="resenaCalificacion">⭐⭐⭐⭐⭐</div>
+                        </div>
+                        <div class="resenaFecha">Fecha: 15/04/2024</div>
+                        <div class="resenaAutor">Por: <a href="">rafaelencinasr</a></div>
+                        <p class="resenaCuerpo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium itaque aspernatur quam nesciunt illum ipsa rerum totam doloremque voluptates impedit velit architecto excepturi provident, eius alias voluptas laborum qui dolorem!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="carretas.js"></script>
 </body>
