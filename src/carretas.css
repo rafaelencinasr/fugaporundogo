@@ -2,7 +2,13 @@
     --active-button: #0085FF;
     --clicked-button: #0170d8;
     --hover-fancy-button: rgb(196, 0, 0);
+    --yellow-detail: #FFBC11;
+    --almost-black: #0C0C0C;
   }
+
+#contentInformacion{
+    margin: 0 25px;
+}
 
 #tituloCarreta{
     margin-bottom: 20px;
@@ -37,32 +43,35 @@
 }
 
 #menu{
+    position: relative;
     box-sizing: border-box;
     padding: 0 30px;
     margin: 0 15px;
-    max-width: 500px;
+    max-width: 580px;
+    min-width: 350px;
     grid-area: 1 / 1 / 2 / 2;
-    height: 450px;
-    background-color: rgba(0, 0, 255, 0.308);
+    /* height: 450px; */
+    /* background-color: rgba(0, 0, 255, 0.308); */
 }
 
 #informacion{
+    position: relative;
+    box-sizing: border-box;
+    /* margin: 0 15px; */
     grid-area: 1 / 2 / 2 / 3;
-    height: 450px;
-    background-color: rgba(255, 0, 0, 0.274);
+    /* height: 450px; */
+    /* background-color: rgba(255, 0, 0, 0.274); */
 }
 
 #fotos{
-   
     grid-area: 1 / 3 / 2 / 4;
-    height: 450px;
-    background-color: rgba(0, 128, 0, 0.315);
+    margin-left: 45px;
 }
 
 #resenas{
     grid-area: 2 / 1 / 3 / 4;
-    height: 450px;
-    background-color: rgba(126, 128, 0, 0.473);
+    /* height: 450px; */
+    /* background-color: rgba(126, 128, 0, 0.473); */
 }
 
 
@@ -107,12 +116,126 @@
     position: relative;
     font-size: 30px;
     text-align: center;
+    font-style: italic;
 }
 
 #explicacionTop3{
     margin: 0 auto;
     font-size: 12px;
-    position: absolute;
-    top: -15px;
-    left: 10px;
+    position: relative;
+    top: 0px;
+    left: 0%;
+}
+
+.informacionSectionContainer{
+    margin-bottom: 15px;
+}
+
+.containerTitle{
+    font-size: 25px;
+}
+
+.informacionTexto{
+    font-size: 15px;
+    text-align: left;
+    font-weight: 400;
+}
+
+#sugerirCambios{
+    text-align: right;
+    margin-left: auto;
+    &>a{
+        color: white;
+        &:visited{
+            color: white;
+        }
+        &:hover{
+            color: rgb(206, 206, 206);
+        }
+    }
+}
+
+.imagenCarreta{
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+}
+
+#nuevaReseñaBtn{
+    font-family: "Rubik", sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background-color: var(--almost-black);
+    transition: 100ms;
+    &:hover{
+        color: var(--almost-black);
+        background-color: white;
+    }
+    &:active{
+        color: black;
+        background-color: #e0e0e0;
+    }
+}
+
+#resenasContainer{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
+    grid-gap: 16px;
+    justify-content: center;
+    padding: initial;
+}
+
+.resena{
+    box-sizing: border-box;
+    width: 400px;
+    border: 1px solid rgba(180, 180, 180, 0.637);
+    padding: 10px 25px
+}
+
+.resenaTitulo{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.resenaCalificacion{
+    font-size: 15px;
+}
+
+.resenaTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.resenaFecha{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.resenaAutor{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: start;
+    &>a{
+        color: white;
+        &:visited{
+            color: white;
+        }
+        &:hover{
+            color: rgb(206, 206, 206);
+        }
+    }
+}
+
+
+.resenaCuerpo{
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
 }

@@ -3,6 +3,7 @@
     --active-button: #0085FF;
     --clicked-button: #0170d8;
     --hover-fancy-button: rgb(196, 0, 0);
+    --almost-black: #0C0C0C;
   }
 
 body, html{

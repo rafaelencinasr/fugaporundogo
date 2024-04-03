@@ -3,19 +3,38 @@ import './carretas.css';
 import supabase from "./config/supabaseClient";
 import tituloCarreta from './components/tituloCarreta';
 import menuItemGenerator from './components/menuItemGenerator';
+import horarioCarretaTr from './components/horarioCarretaTr';
 
 const menuContainer = document.querySelector('#menu');
+const direccionInfo = document.querySelector('#direccionInfo');
+const metodosDePagoInfo = document.querySelector('#metodosDePagoInfo');
+const horariosTablaBody = document.querySelector('#horariosTabla');
 
 let params = new URL(document.location).searchParams; //Se revisa el URL para obtener el ID del producto que queremos mostrar
 let carreta_id = params.get("id"); // Se extrae especificamente el valor de id=
 console.log("id= " + carreta_id);
+
+let metodosDePagoString = '';
+let diasArray = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
 
 const {data, error} = await supabase
     .from('carretas')
     .select()
     .eq('id', carreta_id);
     if(data){
-      //console.log(data);
+      /* Direccion */
+      direccionInfo.textContent = data[0].direccion;
+      /* Metodos de pago */
+      if(data[0].metodosdepago.efectivo){metodosDePagoString += "Efectivo";}
+      if(data[0].metodosdepago.tarjeta){metodosDePagoString += ", Tarjeta";}
+      if(data[0].metodosdepago.tap){metodosDePagoString += ", Tap to pay €";}
+      if(data[0].metodosdepago.transferencia){metodosDePagoString += ", Transferencia";}
+      if(data[0].metodosdepago.otro){metodosDePagoString += ", Otro: " + data[0].metodosdepago.otroDesc;}
+      metodosDePagoInfo.textContent = metodosDePagoString;
+      diasArray.forEach((dia, index)=>{
+        horariosTablaBody.append(horarioCarretaTr(dia, data[0].dias_horarios[index]));
+      })
+      /* Horarios */
     };
 
 async function getMenuItems(carreta){
