@@ -530,16 +530,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/carretas.css":
-/*!****************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/carretas.css ***!
-  \****************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `:root{\n    --active-button: #0085FF;\n    --clicked-button: #0170d8;\n    --hover-fancy-button: rgb(196, 0, 0);\n    --yellow-detail: #FFBC11;\n    --almost-black: #0C0C0C;\n  }\n\n#contentInformacion{\n    margin: 0 25px;\n}\n\n#tituloCarreta{\n    margin-bottom: 20px;\n    display: flex;\n    width: 100%;\n    margin-top: 50px;\n    & > .decorationContainer{\n        max-width: 800px;\n    }\n    &:hover{\n        cursor: auto;\n        color: red;\n        & .buttonDecoration{\n            background-color: red;\n        }\n    }\n}\n\n#califcacionesFavorito{\n    max-width: 600px;\n    display: flex;\n    flex-direction: row;\n    margin: 0 auto;\n    justify-content: space-between;\n}\n\n#contentCarretas{\n    margin-top: 20px;\n    display: grid;\n    grid-template-columns: 1fr 1fr 1fr;\n    grid-template-rows: 1fr 1fr;\n}\n\n#menu{\n    position: relative;\n    box-sizing: border-box;\n    padding: 0 30px;\n    margin: 0 15px;\n    max-width: 580px;\n    min-width: 350px;\n    grid-area: 1 / 1 / 2 / 2;\n    /* height: 450px; */\n    /* background-color: rgba(0, 0, 255, 0.308); */\n}\n\n#informacion{\n    position: relative;\n    box-sizing: border-box;\n    /* margin: 0 15px; */\n    grid-area: 1 / 2 / 2 / 3;\n    /* height: 450px; */\n    /* background-color: rgba(255, 0, 0, 0.274); */\n}\n\n#fotos{\n    grid-area: 1 / 3 / 2 / 4;\n    margin-left: 45px;\n}\n\n#resenas{\n    grid-area: 2 / 1 / 3 / 4;\n    /* height: 450px; */\n    /* background-color: rgba(126, 128, 0, 0.473); */\n}\n\n\n.menuItem{\n    display: flex;\n    justify-content: space-between;\n    position: relative;\n}\n\n.menuText{\n    font-size: 16px;\n}\n\n.itemName {\n    /*background-color: green;*/\n    overflow: hidden;\n    text-overflow: ellipsis;\n    white-space: nowrap;\n    padding: 4px;\n}\n\n.top3::before{\n    position: absolute;\n    left: -20px;\n    content: '⭐';\n}\n\n.itemName:after {\n    content: \" .........................................................................................................................................................................................................................................................................................\"\n}\n\n.precio {\n    /*background-color: red;*/\n    flex-shrink: 0;\n}\n\n.itemPrice::before{\n    content: \"\\$\";\n}\n\n.columnTitle{\n    position: relative;\n    font-size: 30px;\n    text-align: center;\n    font-style: italic;\n}\n\n#explicacionTop3{\n    margin: 0 auto;\n    font-size: 12px;\n    /* position: absolute;\n    top: 0px;\n    left: 0%; */\n}\n\n.informacionSectionContainer{\n    margin-bottom: 15px;\n}\n\n.containerTitle{\n    font-size: 25px;\n}\n\n.informacionTexto{\n    font-size: 15px;\n    text-align: left;\n    font-weight: 400;\n}\n\n#sugerirCambios{\n    text-align: right;\n    margin-left: auto;\n    &>a{\n        color: white;\n        &:visited{\n            color: white;\n        }\n        &:hover{\n            color: rgb(206, 206, 206);\n        }\n    }\n}\n\n.imagenCarreta{\n    width: 100%;\n    height: 340px;\n    object-fit: cover;\n}\n\n#nuevaReseñaBtn, #nuevoPlatilloBtn{\n    font-family: \"Rubik\", sans-serif;\n    font-size: 20px;\n    color: white;\n    padding: 5px 10px;\n    border-radius: 20px;\n    background-color: var(--almost-black);\n    transition: 100ms;\n    &:hover{\n        color: var(--almost-black);\n        background-color: white;\n    }\n    &:active{\n        color: black;\n        background-color: #e0e0e0;\n    }\n}\n\n#resenasContainer{\n    margin-top: 15px;\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(400px, max-content));\n    grid-gap: 16px;\n    justify-content: center;\n    padding: initial;\n}\n\n.resena{\n    box-sizing: border-box;\n    width: 400px;\n    border: 1px solid rgba(180, 180, 180, 0.637);\n    padding: 10px 25px\n}\n\n.resenaTitulo{\n    font-size: 25px;\n    font-weight: 600;\n}\n\n.resenaCalificacion{\n    font-size: 15px;\n}\n\n.resenaTop{\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    align-items: center;\n\n}\n\n.resenaFecha{\n    font-size: 15px;\n    font-weight: 400;\n    text-align: start;\n}\n\n.resenaAutor{\n    font-size: 15px;\n    font-weight: 400;\n    text-align: start;\n    &>a{\n        color: white;\n        &:visited{\n            color: white;\n        }\n        &:hover{\n            color: rgb(206, 206, 206);\n        }\n    }\n}\n\n\n.resenaCuerpo{\n    font-size: 15px;\n    font-weight: 400;\n    text-align: justify;\n}\n\n#nuevoPlatilloContainer{\n    margin-top: 25px;\n    display: flex;\n    justify-content: center;\n}\n\n#imgCarrusel{\n    width: fit-content;\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n}`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://webpack-template/./src/carretas.css?./node_modules/css-loader/dist/cjs.js");
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
 /*!*************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
@@ -567,16 +557,6 @@ eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n
 /***/ ((module) => {
 
 eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=webpack://webpack-template/./node_modules/css-loader/dist/runtime/noSourceMaps.js?");
-
-/***/ }),
-
-/***/ "./src/carretas.css":
-/*!**************************!*\
-  !*** ./src/carretas.css ***!
-  \**************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleDomAPI.js */ \"./node_modules/style-loader/dist/runtime/styleDomAPI.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertBySelector.js */ \"./node_modules/style-loader/dist/runtime/insertBySelector.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ \"./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertStyleElement.js */ \"./node_modules/style-loader/dist/runtime/insertStyleElement.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleTagTransform.js */ \"./node_modules/style-loader/dist/runtime/styleTagTransform.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_carretas_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!./carretas.css */ \"./node_modules/css-loader/dist/cjs.js!./src/carretas.css\");\n\n      \n      \n      \n      \n      \n      \n      \n      \n      \n\nvar options = {};\n\noptions.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());\noptions.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());\n\n      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, \"head\");\n    \noptions.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());\noptions.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_carretas_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"], options);\n\n\n\n\n       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_carretas_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"] && _node_modules_css_loader_dist_cjs_js_carretas_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals ? _node_modules_css_loader_dist_cjs_js_carretas_css__WEBPACK_IMPORTED_MODULE_6__[\"default\"].locals : undefined);\n\n\n//# sourceURL=webpack://webpack-template/./src/carretas.css?");
 
 /***/ }),
 
@@ -650,53 +630,173 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
-/***/ "./src/carretas.js":
-/*!*************************!*\
-  !*** ./src/carretas.js ***!
-  \*************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _carretas_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./carretas.css */ \"./src/carretas.css\");\n/* harmony import */ var _config_supabaseClient__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./config/supabaseClient */ \"./src/config/supabaseClient.js\");\n/* harmony import */ var _components_tituloCarreta__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/tituloCarreta */ \"./src/components/tituloCarreta.js\");\n/* harmony import */ var _components_menuItemGenerator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/menuItemGenerator */ \"./src/components/menuItemGenerator.js\");\n/* harmony import */ var _components_horarioCarretaTr__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/horarioCarretaTr */ \"./src/components/horarioCarretaTr.js\");\n/* harmony import */ var _components_navbar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/navbar */ \"./src/components/navbar.js\");\n\n\n\n\n\n\n\n\nconst menuContainer = document.querySelector('#menuContainer');\nconst direccionInfo = document.querySelector('#direccionInfo');\nconst metodosDePagoInfo = document.querySelector('#metodosDePagoInfo');\nconst horariosTablaBody = document.querySelector('#horariosTabla');\n//navbar();\n\nlet params = new URL(document.location).searchParams; //Se revisa el URL para obtener el ID del producto que queremos mostrar\nlet carreta_id = params.get(\"id\"); // Se extrae especificamente el valor de id=\nconsole.log(\"id= \" + carreta_id);\n\nlet metodosDePagoString = '';\nlet diasArray = ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];\n\nconst {data, error} = await _config_supabaseClient__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n    .from('carretas')\n    .select()\n    .eq('id', carreta_id);\n    if(data){\n      /* Direccion */\n      direccionInfo.textContent = data[0].direccion;\n      /* Metodos de pago */\n      if(data[0].metodosdepago.efectivo){metodosDePagoString += \"Efectivo\";}\n      if(data[0].metodosdepago.tarjeta){metodosDePagoString += \", Tarjeta\";}\n      if(data[0].metodosdepago.tap){metodosDePagoString += \", Tap to pay €\";}\n      if(data[0].metodosdepago.transferencia){metodosDePagoString += \", Transferencia\";}\n      if(data[0].metodosdepago.otro){metodosDePagoString += \", Otro: \" + data[0].metodosdepago.otroDesc;}\n      metodosDePagoInfo.textContent = metodosDePagoString;\n      diasArray.forEach((dia, index)=>{\n        horariosTablaBody.append((0,_components_horarioCarretaTr__WEBPACK_IMPORTED_MODULE_5__[\"default\"])(dia, data[0].dias_horarios[index]));\n      })\n      /* Horarios */\n    };\n\nasync function getMenuItems(carreta){\n  const {data, error_menu} = await _config_supabaseClient__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n  .from('menu')\n  .select()\n  .eq('carreta_id', carreta)\n  .order('recomendaciones', {ascending: false})\n  if(data){\n    console.log(data);\n    data.forEach((menuItem, index)=>{\n      menuContainer.append((0,_components_menuItemGenerator__WEBPACK_IMPORTED_MODULE_4__[\"default\"])(menuItem.platillo, menuItem.precio, index<=2));\n    })\n  } else{\n    console.log(error_menu);\n  };\n}\n\nasync function getCarretas(){\n  const {data, error} = await _config_supabaseClient__WEBPACK_IMPORTED_MODULE_2__[\"default\"]\n    .from('carretas')\n    .select()\n    if(data){\n      console.log(\"Get carretas!\")\n      console.log(data);\n    }\n}\n//getCarretas()\n\ngetMenuItems(carreta_id)\n\n\n;(0,_components_tituloCarreta__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(data[0].nombre);\n\nconst contentCarretas = document.querySelector('#contentCarretas');\n\n\n    //const bisteck = menuItemGenerator(\"BISTECK\", 2.59);\n    //console.log(bisteck);\n    //const pastor = menuItemGenerator(\"PASTOR\", 1.39);\n    //const campechanos = menuItemGenerator(\"CAMPECHANOS\", 3.49);\n    //const longaniza = menuItemGenerator(\"LONGANIZA\", 2.09);\n    //const suadero = menuItemGenerator(\"SUADERO\", 2.89);\n\n    //menuContainer.append(bisteck);\n\n//content.append();\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } }, 1);\n\n//# sourceURL=webpack://webpack-template/./src/carretas.js?");
-
-/***/ }),
-
-/***/ "./src/components/horarioCarretaTr.js":
-/*!********************************************!*\
-  !*** ./src/components/horarioCarretaTr.js ***!
-  \********************************************/
+/***/ "./src/agregarCarreta.js":
+/*!*******************************!*\
+  !*** ./src/agregarCarreta.js ***!
+  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction horarioCarretaTr(dia, diaData){\n    let tableRow = document.createElement(\"tr\");\n    let td1 = document.createElement(\"td\");\n    let td2 = document.createElement(\"td\");\n    \n    td1.textContent = dia;\n\n    if(!diaData.cerrado){\n        td2.textContent = `${diaData.abre} - ${diaData.cierra}`\n    } else{\n        td2.textContent = 'Cerrado';\n    }\n  \n    tableRow.append(td1, td2);\n    //tableRow.id = id;\n    //tableRow.classList.add(\"tableRowContainer\")\n    \n    return tableRow;\n  }\n\n  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (horarioCarretaTr);\n\n//# sourceURL=webpack://webpack-template/./src/components/horarioCarretaTr.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _pages_agregarUnaCarreta__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/agregarUnaCarreta */ \"./src/pages/agregarUnaCarreta.js\");\n/* harmony import */ var _components_pageTitle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/pageTitle */ \"./src/components/pageTitle.js\");\n\n\n\n\n\ncontent.innerHTML = '';\n  content.append((0,_components_pageTitle__WEBPACK_IMPORTED_MODULE_2__[\"default\"])('Agregar Carreta'));\n\n  (0,_pages_agregarUnaCarreta__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n//# sourceURL=webpack://webpack-template/./src/agregarCarreta.js?");
 
 /***/ }),
 
-/***/ "./src/components/menuItemGenerator.js":
+/***/ "./src/components/addMenuItemBtn.js":
+/*!******************************************!*\
+  !*** ./src/components/addMenuItemBtn.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction addMenuItemBtn(){\n    let addMenuItemBtn = document.createElement('button');\n    addMenuItemBtn.classList.add('addSectionBtn', 'nuevoPlatillo');\n    addMenuItemBtn.id = 'addMenuItem';\n    addMenuItemBtn.textContent = '+ Nuevo platillo';\n\n    return addMenuItemBtn;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (addMenuItemBtn);\n\n//# sourceURL=webpack://webpack-template/./src/components/addMenuItemBtn.js?");
+
+/***/ }),
+
+/***/ "./src/components/botonHorarioGeneral.js":
+/*!***********************************************!*\
+  !*** ./src/components/botonHorarioGeneral.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction botonHorarioGeneral(id, dia){\n    let boton = document.createElement('button');\n    boton.classList.add('horarioDia', 'off');\n    boton.id = id;\n    boton.textContent = dia;\n\n    return boton;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (botonHorarioGeneral);\n\n//# sourceURL=webpack://webpack-template/./src/components/botonHorarioGeneral.js?");
+
+/***/ }),
+
+/***/ "./src/components/guardarCarretaBtn.js":
 /*!*********************************************!*\
-  !*** ./src/components/menuItemGenerator.js ***!
+  !*** ./src/components/guardarCarretaBtn.js ***!
   \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction menuItemGenerator(name, price, top3){\n\n    const menuItemContainer = document.createElement(\"div\");\n    menuItemContainer.classList.add(\"menuItem\");\n\n    const itemName = document.createElement(\"div\");\n    itemName.classList.add(\"itemName\",\"menuText\");\n    itemName.textContent = name;\n\n    let itemPrice = document.createElement(\"div\");\n    itemPrice.classList.add(\"itemPrice\",\"menuText\");\n    itemPrice.textContent = price;\n\n    if(top3){\n        console.log(\"Gourmet top 3: \" + name);\n        itemName.classList.add(\"top3\");\n    }\n\n    menuItemContainer.append(itemName, itemPrice)\n\n    return menuItemContainer;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menuItemGenerator);\n\n//# sourceURL=webpack://webpack-template/./src/components/menuItemGenerator.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction guardarCarretaBtn(){\n    let guardarCarretaBtn = document.createElement('button');\n    let decorationContainer = document.createElement('div');\n    let buttonDecoration = document.createElement('div');\n\n    guardarCarretaBtn.id = 'guardarCarreta';\n    decorationContainer.classList.add('decorationContainer');\n    buttonDecoration.classList.add('buttonDecoration');\n    let buttonDecoration2 = buttonDecoration.cloneNode();\n\n    decorationContainer.append(buttonDecoration, buttonDecoration2);\n    let decorationContainer2 = decorationContainer.cloneNode(true);\n\n    guardarCarretaBtn.append(decorationContainer, \"GUARDAR\", decorationContainer2);\n\n    return guardarCarretaBtn;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (guardarCarretaBtn);\n\n//# sourceURL=webpack://webpack-template/./src/components/guardarCarretaBtn.js?");
 
 /***/ }),
 
-/***/ "./src/components/navbar.js":
-/*!**********************************!*\
-  !*** ./src/components/navbar.js ***!
-  \**********************************/
+/***/ "./src/components/horarioIndividual.js":
+/*!*********************************************!*\
+  !*** ./src/components/horarioIndividual.js ***!
+  \*********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n\nfunction listItem(listId, href, textContent){\n    const listItem = document.createElement('li');\n    const listLink = document.createElement('a');\n    \n    listItem.id = listId;\n    listLink.href = href;\n    listLink.textContent = textContent;\n\n    listItem.append(listLink);\n    return listItem;\n}\n\nfunction navbar(){\nconst navbarContainer = document.querySelector(\"#navbar\");\nconst navbarLogo = document.createElement('div');\nnavbarLogo.id = 'navbar-logo';\nconst navbarLinks = document.createElement('ul');\nnavbarLinks.id = 'navbar-links';\nconst inicio = listItem('inicio', './index.html', 'INICIO'); \nconst top10 = listItem('top10', './top10.html', 'TOP 10');\nconst agregarCarreta = listItem('agregarCarreta', './agregarCarreta.html', 'AGREGAR CARRETA'); \nconst miPerfil = listItem('miPerfil', './miPerfil.html', 'MI PERFIL');\nconst busqueda = listItem('busqueda', './busqueda.html', 'BARRA DE BUSQUEDA;');\nconst navbarBg = document.createElement(\"img\");\nnavbarBg.id = 'navbarBgImage';\nnavbarBg.src = './img/navbar-bg.svg';\n\nnavbarLogo.textContent = 'FUGA POR UN DOGO';\nnavbarLinks.append(inicio, top10, agregarCarreta, miPerfil, busqueda);\nnavbarContainer.append(navbarLogo, navbarLinks, navbarBg);\n\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (navbar);\n\n//# sourceURL=webpack://webpack-template/./src/components/navbar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction horarioIndividual(id){\n    let horarioIndividual = document.createElement('div');\n    let diaHorario = document.createElement('div');\n    let rangoHorarios = document.createElement('div');\n    let inputHorarioAbierto = document.createElement('input');\n    let inputHorarioCerrado = document.createElement('input');\n    let checkboxCerrado = document.createElement('input');\n\n    horarioIndividual.classList.add('horarioIndividual');\n\n    let nombreDelDia = id.charAt(0).toUpperCase() + id.slice(1);\n\n    diaHorario.classList.add('diaHorario');\n    diaHorario.textContent = nombreDelDia;\n\n    inputHorarioAbierto.type = 'time';\n    inputHorarioAbierto.name = `${id}Abierto`;\n    inputHorarioAbierto.id = `${id}Abierto`;\n    inputHorarioAbierto.classList.add('horarioGeneralAbierto');\n\n    inputHorarioCerrado.type = 'time';\n    inputHorarioCerrado.name = `${id}Cierra`;\n    inputHorarioCerrado.id = `${id}Cierra`;\n    inputHorarioCerrado.classList.add('horarioGeneralCerrado');\n\n    rangoHorarios.append(inputHorarioAbierto, '-', inputHorarioCerrado);\n\n    checkboxCerrado.type = 'checkbox';\n    checkboxCerrado.name = `${id}Cerrado`;\n    checkboxCerrado.id = `${id}Cerrado`;\n\n    horarioIndividual.append(diaHorario, rangoHorarios, checkboxCerrado);\n\n    return horarioIndividual;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (horarioIndividual);\n\n//# sourceURL=webpack://webpack-template/./src/components/horarioIndividual.js?");
 
 /***/ }),
 
-/***/ "./src/components/tituloCarreta.js":
+/***/ "./src/components/horariosContainer.js":
+/*!*********************************************!*\
+  !*** ./src/components/horariosContainer.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _horariosGeneral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./horariosGeneral */ \"./src/components/horariosGeneral.js\");\n\n\nfunction horariosContainer(){\n    let horariosContainer = document.createElement('div');\n    let sectionHeader = document.createElement('div');\n\n    horariosContainer.classList.add('metodosPagoContainer', 'sectionContainer');\n\n    sectionHeader.classList.add('section-header');\n    sectionHeader.textContent = 'Horarios'\n\n    horariosContainer.append(sectionHeader)\n    horariosContainer.append((0,_horariosGeneral__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n\n    return horariosContainer;\n\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (horariosContainer);\n\n//# sourceURL=webpack://webpack-template/./src/components/horariosContainer.js?");
+
+/***/ }),
+
+/***/ "./src/components/horariosGeneral.js":
+/*!*******************************************!*\
+  !*** ./src/components/horariosGeneral.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _botonHorarioGeneral__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./botonHorarioGeneral */ \"./src/components/botonHorarioGeneral.js\");\n\n\nfunction horariosGeneral(){\n    let horariosGeneral = document.createElement('div');\n    let divContainer = document.createElement('div');\n    let horarioGeneralContainer = document.createElement('div');\n    let inputAbierto = document.createElement('input');\n    let inputCerrado = document.createElement('input');\n\n    horariosGeneral.id = 'horarios-general';\n    let diasArray = ['L', 'M', 'Mi', 'J', 'V', 'S', 'D'];\n    diasArray.forEach((element)=>{\n        divContainer.append((0,_botonHorarioGeneral__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(`horario${element}`, element));\n    })\n\n    inputAbierto.type = 'time';\n    inputAbierto.name = 'horaAbierto';\n    inputAbierto.id = 'horaAbierto';\n\n    inputCerrado.type = 'time';\n    inputCerrado.name = 'horaCerrado';\n    inputCerrado.id = 'horaCerrado';\n\n    horarioGeneralContainer.classList.add('horarioGeneralContainer');\n\n    horarioGeneralContainer.append(inputAbierto, '-', inputCerrado);\n\n    horariosGeneral.append(divContainer, horarioGeneralContainer);\n\n    return horariosGeneral;\n    \n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (horariosGeneral);\n\n//# sourceURL=webpack://webpack-template/./src/components/horariosGeneral.js?");
+
+/***/ }),
+
+/***/ "./src/components/horariosIndividualesContainer.js":
+/*!*********************************************************!*\
+  !*** ./src/components/horariosIndividualesContainer.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _horarioIndividual__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./horarioIndividual */ \"./src/components/horarioIndividual.js\");\n\n\nfunction horariosIndividualesContainer(){\n    let horariosIndividualesContainer = document.createElement('div');\n    horariosIndividualesContainer.id = 'horariosIndividualesContainer';\n\n    //Aqui van a ir forEach de horarioIndividual\n\n    let diasArray = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo'];\n    diasArray.forEach((element)=>{\n        horariosIndividualesContainer.append((0,_horarioIndividual__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(element));\n    })\n\n    return horariosIndividualesContainer;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (horariosIndividualesContainer);\n\n//# sourceURL=webpack://webpack-template/./src/components/horariosIndividualesContainer.js?");
+
+/***/ }),
+
+/***/ "./src/components/leftContainer.js":
 /*!*****************************************!*\
-  !*** ./src/components/tituloCarreta.js ***!
+  !*** ./src/components/leftContainer.js ***!
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction tituloCarreta(titulo){\n    let tituloCarreta = document.querySelector('#tituloCarreta');\n    let decorationContainer = document.createElement('div');\n    let buttonDecoration = document.createElement('div');\n\n    //tituloCarreta.id = 'tituloCarreta';\n    decorationContainer.classList.add('decorationContainer');\n    buttonDecoration.classList.add('buttonDecoration');\n    let buttonDecoration2 = buttonDecoration.cloneNode();\n\n    decorationContainer.append(buttonDecoration, buttonDecoration2);\n    let decorationContainer2 = decorationContainer.cloneNode(true);\n\n    tituloCarreta.append(decorationContainer, titulo, decorationContainer2);\n\n    //return tituloCarreta;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (tituloCarreta);\n\n//# sourceURL=webpack://webpack-template/./src/components/tituloCarreta.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _textInput__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./textInput */ \"./src/components/textInput.js\");\n/* harmony import */ var _metodosPago__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./metodosPago */ \"./src/components/metodosPago.js\");\n/* harmony import */ var _horariosContainer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./horariosContainer */ \"./src/components/horariosContainer.js\");\n/* harmony import */ var _horariosIndividualesContainer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./horariosIndividualesContainer */ \"./src/components/horariosIndividualesContainer.js\");\n\n\n\n\n\nfunction leftContainer(){\n    const leftContainer = document.createElement(\"div\");\n    leftContainer.id = 'leftContainer';\n    leftContainer.classList.add('columnContainer');\n\n    leftContainer.append((0,_textInput__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({id: \"nombre\", textContent: \"Nombre\"}));\n    leftContainer.append((0,_textInput__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({id: \"direccion\", textContent: \"Dirección\"}));\n    leftContainer.append((0,_textInput__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({id: \"ubicacionUrl\", textContent: \"Ubicación URL\"}));\n    leftContainer.append((0,_metodosPago__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n    leftContainer.append((0,_horariosContainer__WEBPACK_IMPORTED_MODULE_2__[\"default\"])());\n    leftContainer.append((0,_horariosIndividualesContainer__WEBPACK_IMPORTED_MODULE_3__[\"default\"])());\n\n    return leftContainer;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (leftContainer);\n\n//# sourceURL=webpack://webpack-template/./src/components/leftContainer.js?");
+
+/***/ }),
+
+/***/ "./src/components/menuInputTable.js":
+/*!******************************************!*\
+  !*** ./src/components/menuInputTable.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction menuInputTable(){\n    let table = document.createElement('table');\n    let thead = document.createElement('thead');\n    let tr = document.createElement('tr');\n    let th1 = document.createElement('th');\n    let th2 = document.createElement('th');\n    let th3 = document.createElement('th');\n    let tbody = document.createElement('tbody');\n\n    table.id = 'menuInputTable';\n    th2.textContent = 'Item';\n    th3.textContent = 'Precio';\n\n    tbody.id = 'tableBody';\n\n    tr.append(th1, th2, th3);\n    thead.append(tr);\n\n    table.append(thead, tbody);\n\n    return table;\n\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menuInputTable);\n\n//# sourceURL=webpack://webpack-template/./src/components/menuInputTable.js?");
+
+/***/ }),
+
+/***/ "./src/components/menuItem.js":
+/*!************************************!*\
+  !*** ./src/components/menuItem.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nasync function checkEmptyTableBody(id){\n  \n    setTimeout(() => {\n      let tableBody = document.querySelector(\"#tableBody\"); \n      if(tableBody.childElementCount<1){\n        console.log(\"TableBody is empty!\");\n        tableBody.append(menuItem(id));\n      }\n    }, 1);\n  }\n\nfunction menuItem(id){\n    let tableRow = document.createElement(\"tr\");\n    let td1 = document.createElement(\"td\");\n    let td2 = document.createElement(\"td\");\n    let td3 = document.createElement(\"td\");\n    let deleteOptionBtn = document.createElement(\"button\");\n    let inputText = document.createElement(\"input\");\n    let inputNumber = document.createElement(\"input\"); \n  \n    deleteOptionBtn.classList.add(\"addSectionBtn\", \"deleteOption\");\n    deleteOptionBtn.textContent = '-';\n    deleteOptionBtn.addEventListener(\"click\", ()=>{\n      checkEmptyTableBody(id);\n      deleteOptionBtn.parentElement.parentElement.remove();\n    })\n    inputText.type = \"text\";\n    inputNumber.type = \"number\";\n  \n    td1.append(deleteOptionBtn);\n    td2.append(inputText);\n    td3.append(inputNumber);\n  \n    tableRow.append(td1, td2, td3);\n    tableRow.id = id;\n    tableRow.classList.add(\"tableRowContainer\")\n    \n    return tableRow;\n  }\n\n  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (menuItem);\n\n\n//# sourceURL=webpack://webpack-template/./src/components/menuItem.js?");
+
+/***/ }),
+
+/***/ "./src/components/metodosPago.js":
+/*!***************************************!*\
+  !*** ./src/components/metodosPago.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _opcionPago__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./opcionPago */ \"./src/components/opcionPago.js\");\n\n\nfunction metodosPago(){\n    let metodosPagoContainer = document.createElement('div');\n    let sectionHeader = document.createElement('div');\n\n    metodosPagoContainer.classList.add('metodosPagoContainer', 'sectionContainer');\n\n    sectionHeader.classList.add('section-header');\n    sectionHeader.textContent = 'Métodos de pago'\n\n    metodosPagoContainer.append(sectionHeader)\n    metodosPagoContainer.append((0,_opcionPago__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({id: \"efectivo\", textContent: \"Efectivo\"}));\n    metodosPagoContainer.append((0,_opcionPago__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({id: \"tarjeta\", textContent: \"Tarjeta\"}));\n    metodosPagoContainer.append((0,_opcionPago__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({id: \"tap\", textContent: \"Tap to pay €\"}));\n    metodosPagoContainer.append((0,_opcionPago__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({id: \"transferencia\", textContent: \"Transferencia\"}));\n    metodosPagoContainer.append((0,_opcionPago__WEBPACK_IMPORTED_MODULE_0__[\"default\"])({id: \"otro\", textContent: \"Otro: \", otro: true}));\n\n    return metodosPagoContainer;\n\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (metodosPago);\n\n//# sourceURL=webpack://webpack-template/./src/components/metodosPago.js?");
+
+/***/ }),
+
+/***/ "./src/components/opcionPago.js":
+/*!**************************************!*\
+  !*** ./src/components/opcionPago.js ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction opcionPago(info){\n    let opcionPago = document.createElement('div');\n    let input = document.createElement('input');\n    let label = document.createElement('label');\n\n    opcionPago.classList.add('opcionPago');\n    \n    input.type = 'checkbox';\n    input.name = info.id;\n    input.id = info.id;\n\n    label.htmlFor = info.id;\n    label.textContent = info.textContent;\n\n    opcionPago.append(input, label);\n\n    if(info.otro){\n        let inputTextOtro = document.createElement('input');\n        inputTextOtro.type = 'text';\n        inputTextOtro.name = 'otroDesc'\n        inputTextOtro.id = 'otroDesc'\n\n        opcionPago.append(inputTextOtro);\n    }\n\n    return opcionPago\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (opcionPago);\n\n//# sourceURL=webpack://webpack-template/./src/components/opcionPago.js?");
+
+/***/ }),
+
+/***/ "./src/components/pageTitle.js":
+/*!*************************************!*\
+  !*** ./src/components/pageTitle.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction pageTitle(title){\n    const pageTitle = document.createElement('h2');\n  pageTitle.classList.add('pageTitle');\n  pageTitle.textContent = title;\n\n  return pageTitle;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (pageTitle);\n\n//# sourceURL=webpack://webpack-template/./src/components/pageTitle.js?");
+
+/***/ }),
+
+/***/ "./src/components/rightContainer.js":
+/*!******************************************!*\
+  !*** ./src/components/rightContainer.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _seccionOpcional__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./seccionOpcional */ \"./src/components/seccionOpcional.js\");\n\n\nfunction rightContainer(){\n    const rightContainer = document.createElement(\"div\");\n    rightContainer.id = 'rightContainer';\n    rightContainer.classList.add('columnContainer');\n    let optionalArray = ['Menu']; //'Foto', 'Barra', 'Menu', 'Mesas'\n\n    optionalArray.forEach((element)=>{\n    rightContainer.append((0,_seccionOpcional__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(element));\n    });\n\n    return rightContainer;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (rightContainer);\n\n//# sourceURL=webpack://webpack-template/./src/components/rightContainer.js?");
+
+/***/ }),
+
+/***/ "./src/components/seccionOpcional.js":
+/*!*******************************************!*\
+  !*** ./src/components/seccionOpcional.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _menuInputTable__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./menuInputTable */ \"./src/components/menuInputTable.js\");\n/* harmony import */ var _addMenuItemBtn_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./addMenuItemBtn.js */ \"./src/components/addMenuItemBtn.js\");\n/* harmony import */ var _menuItem__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menuItem */ \"./src/components/menuItem.js\");\n\n\n\n\nfunction seccionOpcional(id){\n    let seccionOpcional = document.createElement('div');\n    let optionalSectionHeader = document.createElement('div');\n    let optionalContent = document.createElement('div');\n    let addSectionBtn = document.createElement('button');\n    let optionalSectionName = document.createElement('div');\n\n    seccionOpcional.classList.add('optional');\n    optionalSectionHeader.classList.add('optionalSectionHeader');\n    \n    addSectionBtn.classList.add('addSectionBtn');\n    addSectionBtn.textContent = '+';\n    addSectionBtn.id = `optional${id}Btn`;\n\n    addSectionBtn.addEventListener('click', ()=>{\n        if(addSectionBtn.classList.contains('deleteOption')){\n            addSectionBtn.textContent = '+';\n            optionalContent.innerHTML = '';\n        } else{\n            addSectionBtn.textContent = '-';\n            if(true){\n                optionalContent.append((0,_menuInputTable__WEBPACK_IMPORTED_MODULE_0__[\"default\"])());\n                optionalContent.append((0,_addMenuItemBtn_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])());\n                const tableBody2 = document.querySelector(\"#tableBody\");\n                const addMenuItemBtn2 = document.querySelector(\"#addMenuItem\");\n            \n                \n                tableBody2.append((0,_menuItem__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(1));\n                addMenuItemBtn2.addEventListener(\"click\", ()=>{\n                    console.log(\"new menu item\");\n                    tableBody2.append((0,_menuItem__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(1));\n                    id++;\n                  })\n            }\n        }\n        addSectionBtn.classList.toggle(\"deleteOption\");\n    })\n\n    optionalSectionName.textContent = id + ' (opcional)';\n\n    optionalSectionHeader.append(addSectionBtn, optionalSectionName);\n\n    optionalContent.id = `optional${id}`;\n\n    seccionOpcional.append(optionalSectionHeader, optionalContent);\n\n    return seccionOpcional;\n\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (seccionOpcional);\n\n//# sourceURL=webpack://webpack-template/./src/components/seccionOpcional.js?");
+
+/***/ }),
+
+/***/ "./src/components/textInput.js":
+/*!*************************************!*\
+  !*** ./src/components/textInput.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction textInput(info){\n    let textInputContainer = document.createElement('div');\n    let label = document.createElement('label');\n    let input = document.createElement('input');\n\n    textInputContainer.classList.add('textInputContainer', 'sectionContainer');\n    \n    label.htmlFor = info.id;\n    label.textContent = info.textContent;\n\n    input.type = 'text';\n    input.name = info.id;\n    input.id = info.id;\n    textInputContainer.append(label, input);\n\n    return textInputContainer\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (textInput);\n\n//# sourceURL=webpack://webpack-template/./src/components/textInput.js?");
 
 /***/ }),
 
@@ -707,6 +807,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _supabase_supabase_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @supabase/supabase-js */ \"./node_modules/@supabase/supabase-js/dist/module/index.js\");\n\n\n\n//const supabaseUrl = process.env.SUPABASE_URL\n//const supabaseKey = process.env.SUPABASE_ANON_KEY\n\nconst supabaseUrl = 'https://zawltmxjmmliqyywtohj.supabase.co'\nconst supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inphd2x0bXhqbW1saXF5eXd0b2hqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTA5NjU4NDYsImV4cCI6MjAyNjU0MTg0Nn0._ahwHtWBcF2rt_c3aGNxMmxnb1INgVlgv0G9ogpmBuw'\n\nconst supabase = (0,_supabase_supabase_js__WEBPACK_IMPORTED_MODULE_0__.createClient)(supabaseUrl, supabaseKey)\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (supabase);\n\n//# sourceURL=webpack://webpack-template/./src/config/supabaseClient.js?");
+
+/***/ }),
+
+/***/ "./src/pages/agregarUnaCarreta.js":
+/*!****************************************!*\
+  !*** ./src/pages/agregarUnaCarreta.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../style.css */ \"./src/style.css\");\n/* harmony import */ var _config_supabaseClient__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../config/supabaseClient */ \"./src/config/supabaseClient.js\");\n/* harmony import */ var _components_leftContainer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/leftContainer */ \"./src/components/leftContainer.js\");\n/* harmony import */ var _components_rightContainer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/rightContainer */ \"./src/components/rightContainer.js\");\n/* harmony import */ var _components_guardarCarretaBtn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/guardarCarretaBtn */ \"./src/components/guardarCarretaBtn.js\");\n\n\n\n//Components\n\n\n\n\nfunction agregarUnaCarreta(){\n\n  const content = document.querySelector('#content');\n  content.append((0,_components_leftContainer__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(), (0,_components_rightContainer__WEBPACK_IMPORTED_MODULE_3__[\"default\"])(), (0,_components_guardarCarretaBtn__WEBPACK_IMPORTED_MODULE_4__[\"default\"])());\n  \n  const botonGuardar =  document.querySelector('#guardarCarreta');\n  const nombreInput = document.querySelector('#nombre');\n  const direccionInput = document.querySelector('#direccion');\n  const ubicacionUrlInput = document.querySelector('#ubicacionUrl');\n  const efectivoInput = document.querySelector('#direccion');\n  const tarjetaInput = document.querySelector('#tarjeta');\n  const tapInput = document.querySelector('#tap')\n  const transferenciaInput = document.querySelector('#transferencia');\n  const otroInput = document.querySelector('#otro');\n  const otroDescInput = document.querySelector('#otroDesc');\n  \n  const lunesAbiertoInput = document.querySelector('#lunesAbierto');\n  const lunesCierraInput = document.querySelector('#lunesCierra');\n  const lunesCerradoInput = document.querySelector('#lunesCerrado');\n  \n  const martesAbiertoInput = document.querySelector('#martesAbierto');\n  const martesCierraInput = document.querySelector('#martesCierra');\n  const martesCerradoInput = document.querySelector('#martesCerrado');\n  \n  const miercolesAbiertoInput = document.querySelector('#miercolesAbierto');\n  const miercolesCierraInput = document.querySelector('#miercolesCierra');\n  const miercolesCerradoInput = document.querySelector('#miercolesCerrado');\n  \n  const juevesAbiertoInput = document.querySelector('#juevesAbierto');\n  const juevesCierraInput = document.querySelector('#juevesCierra');\n  const juevesCerradoInput = document.querySelector('#juevesCerrado');\n  \n  const viernesAbiertoInput = document.querySelector('#viernesAbierto');\n  const viernesCierraInput = document.querySelector('#viernesCierra');\n  const viernesCerradoInput = document.querySelector('#viernesCerrado');\n  \n  const sabadoAbiertoInput = document.querySelector('#sabadoAbierto');\n  const sabadoCierraInput = document.querySelector('#sabadoCierra');\n  const sabadoCerradoInput = document.querySelector('#sabadoCerrado');\n  \n  const domingoAbiertoInput = document.querySelector('#domingoAbierto');\n  const domingoCierraInput = document.querySelector('#domingoCierra');\n  const domingoCerradoInput = document.querySelector('#domingoCerrado');\n  \n  /*\n  function component() {\n      const element = document.createElement('div');\n    \n      // Lodash, currently included via a script, is required for this line to work\n      element.innerHTML = \"\";\n      element.classList.add(\"hello\");\n  \n      const myIcon = new Image();\n      myIcon.src = Icon;\n    \n      //element.appendChild(myIcon);\n      \n    //Fetch a la base da datos\n        const fetchSmoothies = async () =>{\n          const {data, error} = await supabase\n            .from('carretas')\n            .select()\n  \n            if(error){\n              alert('Could not fetch smoothies');\n            }\n            if(data){\n              console.log(data);\n            }\n        }\n  \n        fetchSmoothies();\n  \n      return element;\n  \n  }\n  */\n    \n  //document.body.appendChild(component());\n  \n  \n  botonGuardar.addEventListener(\"click\", async ()=>{\n    //console.log(\"Boton guardar picado\");\n    let nombre = nombreInput.value;\n    let direccion = direccionInput.value;\n    let ubicacionurl = ubicacionUrlInput.value;\n  \n    let metodosdepago = {\n      \"tap\": tapInput.checked,\n      \"otro\": otroInput.checked,\n      \"tarjeta\": tarjetaInput.checked,\n      \"efectivo\": efectivoInput.checked,\n      \"otroDesc\": otroDescInput.value,\n      \"transferencia\": transferenciaInput.checked\n    }\n  \n    let lunes = {\n      \"cerrado\": lunesCerradoInput.checked,\n      \"abre\": lunesAbiertoInput.value,\n      \"cierra\": lunesCierraInput.value\n    }\n  \n    let martes = {\n      \"cerrado\": martesCerradoInput.checked,\n      \"abre\": martesAbiertoInput.value,\n      \"cierra\": martesCierraInput.value\n    }\n  \n    let miercoles = {\n      \"cerrado\": miercolesCerradoInput.checked,\n      \"abre\": miercolesAbiertoInput.value,\n      \"cierra\": miercolesCierraInput.value\n    }\n  \n    let jueves = {\n      \"cerrado\": juevesCerradoInput.checked,\n      \"abre\": juevesAbiertoInput.value,\n      \"cierra\": juevesCierraInput.value\n    }\n  \n    let viernes = {\n      \"cerrado\": viernesCerradoInput.checked,\n      \"abre\": viernesAbiertoInput.value,\n      \"cierra\": viernesCierraInput.value\n    }\n  \n    let sabado = {\n      \"cerrado\": sabadoCerradoInput.checked,\n      \"abre\": sabadoAbiertoInput.value,\n      \"cierra\": sabadoCierraInput.value\n    }\n  \n    let domingo = {\n      \"cerrado\": domingoCerradoInput.checked,\n      \"abre\": domingoAbiertoInput.value,\n      \"cierra\": domingoCierraInput.value\n    }\n\n    let dias_horarios = [lunes, martes, miercoles, jueves, viernes, sabado, domingo];\n  \n    const {data, error} = await _config_supabaseClient__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n      .from('carretas')\n      .insert([{nombre, direccion, ubicacionurl, metodosdepago, dias_horarios}])\n      .select()\n      if(data){\n        console.log(data);\n      }\n  \n      //Revisa si la opcion de menu esta activada\n      if(document.querySelector(\"#optionalMenuBtn\").classList.contains('deleteOption')){\n        saveMenu(data[0].id);\n      }\n  \n      alert(\"Funcion no disponible por el momento\")\n  })\n  \n  let activeButtonsArray = [false, false, false, false, false, false, false]\n  const horaAbierto = document.querySelector(\"#horaAbierto\");\n  \n  const horaCerrado = document.querySelector(\"#horaCerrado\");\n  \n  horaAbierto.addEventListener('change', ()=>{\n    console.log(\"Cambio horario abierto\");\n    applyGeneralHours();\n  })\n  horaCerrado.addEventListener('change', ()=>{\n    console.log(\"Cambio horario cerrado\");\n    applyGeneralHours();\n  })\n  \n  function checkActiveButtons(){\n    nodelistBotonesHorarios.forEach((node, index)=>{\n      if(node.classList.contains(\"onButton\")){\n        activeButtonsArray[index] = true;\n      }\n      else{\n        activeButtonsArray[index] = false;\n      }\n    })\n    applyGeneralHours();\n  }\n  \n  \n  \n  function applyGeneralHours(){\n    const nodelistHorarioGeneralAbierto = document.querySelectorAll(\".horarioGeneralAbierto\");\n    const nodelistHorarioGeneralCerrado = document.querySelectorAll(\".horarioGeneralCerrado\");\n    activeButtonsArray.forEach((element, index)=>{\n      if(element){\n        nodelistHorarioGeneralAbierto[index].value = horaAbierto.value;\n        nodelistHorarioGeneralCerrado[index].value = horaCerrado.value;\n      }\n      else{\n        nodelistHorarioGeneralAbierto[index].value = '';\n        nodelistHorarioGeneralCerrado[index].value = '';\n      }\n    })\n  \n  }\n  \n  const nodelistBotonesHorarios = document.querySelectorAll(\".horarioDia\");\n  //console.log(nodelistBotonesHorarios);\n  nodelistBotonesHorarios.forEach((node, index)=>{\n    node.addEventListener(\"click\", ()=>{\n      \n      node.classList.toggle(\"onButton\");\n      checkActiveButtons();\n    })\n  })\n  \n  ////////////// Menu input table //////////////\n  const optionalMenuBtn = document.querySelector(\"#optionalMenuBtn\");\n  \n  optionalMenuBtn.addEventListener(\"click\", ()=>{\n    console.log(\"Menu button clicked\");\n  })\n  \n  ////////////// Menu items post to DB //////////////\n  \n  async function saveMenu(carreta_id){\n    let allMenuItemsNodelist = document.querySelectorAll(\".tableRowContainer\");\n    console.log(allMenuItemsNodelist);\n    allMenuItemsNodelist.forEach(async (node)=>{\n      let platillo = node.childNodes[1].childNodes[0].value;\n      let precio = node.childNodes[2].childNodes[0].value;\n      console.log(`Item: \"${platillo}\"..... $${precio}`);\n  \n        if(platillo!='' && precio>0){\n            const {data, error} = await _config_supabaseClient__WEBPACK_IMPORTED_MODULE_1__[\"default\"]\n          .from('menu')\n          .insert([{platillo, precio, carreta_id}])\n          .select()\n          if(data){\n            console.log(data);\n          }\n        }\n      })\n  }\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (agregarUnaCarreta);\n\n\n//# sourceURL=webpack://webpack-template/./src/pages/agregarUnaCarreta.js?");
 
 /***/ })
 
@@ -740,75 +850,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/async module */
-/******/ 	(() => {
-/******/ 		var webpackQueues = typeof Symbol === "function" ? Symbol("webpack queues") : "__webpack_queues__";
-/******/ 		var webpackExports = typeof Symbol === "function" ? Symbol("webpack exports") : "__webpack_exports__";
-/******/ 		var webpackError = typeof Symbol === "function" ? Symbol("webpack error") : "__webpack_error__";
-/******/ 		var resolveQueue = (queue) => {
-/******/ 			if(queue && queue.d < 1) {
-/******/ 				queue.d = 1;
-/******/ 				queue.forEach((fn) => (fn.r--));
-/******/ 				queue.forEach((fn) => (fn.r-- ? fn.r++ : fn()));
-/******/ 			}
-/******/ 		}
-/******/ 		var wrapDeps = (deps) => (deps.map((dep) => {
-/******/ 			if(dep !== null && typeof dep === "object") {
-/******/ 				if(dep[webpackQueues]) return dep;
-/******/ 				if(dep.then) {
-/******/ 					var queue = [];
-/******/ 					queue.d = 0;
-/******/ 					dep.then((r) => {
-/******/ 						obj[webpackExports] = r;
-/******/ 						resolveQueue(queue);
-/******/ 					}, (e) => {
-/******/ 						obj[webpackError] = e;
-/******/ 						resolveQueue(queue);
-/******/ 					});
-/******/ 					var obj = {};
-/******/ 					obj[webpackQueues] = (fn) => (fn(queue));
-/******/ 					return obj;
-/******/ 				}
-/******/ 			}
-/******/ 			var ret = {};
-/******/ 			ret[webpackQueues] = x => {};
-/******/ 			ret[webpackExports] = dep;
-/******/ 			return ret;
-/******/ 		}));
-/******/ 		__webpack_require__.a = (module, body, hasAwait) => {
-/******/ 			var queue;
-/******/ 			hasAwait && ((queue = []).d = -1);
-/******/ 			var depQueues = new Set();
-/******/ 			var exports = module.exports;
-/******/ 			var currentDeps;
-/******/ 			var outerResolve;
-/******/ 			var reject;
-/******/ 			var promise = new Promise((resolve, rej) => {
-/******/ 				reject = rej;
-/******/ 				outerResolve = resolve;
-/******/ 			});
-/******/ 			promise[webpackExports] = exports;
-/******/ 			promise[webpackQueues] = (fn) => (queue && fn(queue), depQueues.forEach(fn), promise["catch"](x => {}));
-/******/ 			module.exports = promise;
-/******/ 			body((deps) => {
-/******/ 				currentDeps = wrapDeps(deps);
-/******/ 				var fn;
-/******/ 				var getResult = () => (currentDeps.map((d) => {
-/******/ 					if(d[webpackError]) throw d[webpackError];
-/******/ 					return d[webpackExports];
-/******/ 				}))
-/******/ 				var promise = new Promise((resolve) => {
-/******/ 					fn = () => (resolve(getResult));
-/******/ 					fn.r = 0;
-/******/ 					var fnQueue = (q) => (q !== queue && !depQueues.has(q) && (depQueues.add(q), q && !q.d && (fn.r++, q.push(fn))));
-/******/ 					currentDeps.map((dep) => (dep[webpackQueues](fnQueue)));
-/******/ 				});
-/******/ 				return fn.r ? promise : getResult();
-/******/ 			}, (err) => ((err ? reject(promise[webpackError] = err) : outerResolve(exports)), resolveQueue(queue)));
-/******/ 			queue && queue.d < 0 && (queue.d = 0);
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -990,7 +1031,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"carretas": 0
+/******/ 			"agregarCarreta": 0
 /******/ 		};
 /******/ 		
 /******/ 		__webpack_require__.f.j = (chunkId, promises) => {
@@ -1082,7 +1123,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/carretas.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/agregarCarreta.js");
 /******/ 	
 /******/ })()
 ;
