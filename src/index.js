@@ -1,8 +1,7 @@
 import './style.css';
-//import supabase from './config/supabaseClient';
 import inicioPage from './pages/inicio';
-import agregarUnaCarreta from './pages/agregarUnaCarreta';
 import pageTitle from './components/pageTitle';
+import navbar from './components/navbar';
 
 const inicio = document.querySelector('#inicio');
 const top10 = document.querySelector('#top10');
@@ -10,34 +9,37 @@ const agregarCarreta = document.querySelector('#agregarCarreta');
 const miPerfil = document.querySelector('#miPerfil');
 const content = document.querySelector('#content');
 
-content.append(pageTitle('Inicio'));
-  inicioPage()
+navbar();
 
+content.append(pageTitle('Inicio'));
+inicioPage()
+/*
 inicio.addEventListener("click", ()=>{
   content.innerHTML = '';
   content.append(pageTitle('Inicio'));
   inicioPage();
 })
-
 top10.addEventListener("click", ()=>{
   content.innerHTML = '';
   content.append(pageTitle('Top 10'));
   //top10();
 })
-
+*/
+/*
 agregarCarreta.addEventListener("click", ()=>{
   content.innerHTML = '';
   content.append(pageTitle('Agregar Carreta'));
 
   agregarUnaCarreta();
 })
-
+*/
+/*
 miPerfil.addEventListener("click", ()=>{
   content.innerHTML = '';
   content.append(pageTitle('Mi Perfil'));
   //miPerfil();
 })
-
+*/
 /*
 //Components
 import leftContainer from './components/leftContainer';

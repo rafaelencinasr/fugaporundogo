@@ -299,6 +299,7 @@ input[type="time"]{
 /* ------ Tarjetas inicio ------- */
 
 #carretasAbiertas{
+    position: relative;
     grid-area: 2 / 1 / 3 / 3;
     width: 100%;
     display: flex;
@@ -306,9 +307,11 @@ input[type="time"]{
     flex-wrap: wrap;
     gap: 30px;
     justify-content: start;
+    margin-bottom: 25px;
 }
 
 #carretasCerradas{
+    position: relative;
     grid-area: 3 / 1 / 4 / 3;
     width: 100%;
     display: flex;
@@ -389,3 +392,9 @@ input[type="time"]{
     justify-content: space-between;
 }
 
+.tituloCarreta{
+    font-size: 25px;
+    position: absolute;
+    top: -35px;
+    font-style: italic;
+}

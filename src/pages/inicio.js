@@ -13,9 +13,17 @@ async function inicio(){
     const content = document.querySelector('#content');
     const carretasAbiertas = document.createElement('div');
     carretasAbiertas.id = 'carretasAbiertas';
+    const fugaOritaYa = document.createElement("div");
+    fugaOritaYa.classList.add("tituloCarreta");
+    fugaOritaYa.textContent = "Fuga orita ya"
+    carretasAbiertas.append(fugaOritaYa);
 
     const carretasCerradas = document.createElement('div');
     carretasCerradas.id = 'carretasCerradas';
+    const ripCarretas = document.createElement("div");
+    ripCarretas.classList.add("tituloCarreta");
+    ripCarretas.textContent = "Cerradas por el momento"
+    carretasCerradas.append(ripCarretas);
 
     //Algoritmo para revisar si la carreta abre hoy o no, se hace un array
     //para carretas abiertas, y otro para cerradas
