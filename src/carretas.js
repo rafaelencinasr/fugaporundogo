@@ -10,7 +10,7 @@ const menuContainer = document.querySelector('#menuContainer');
 const direccionInfo = document.querySelector('#direccionInfo');
 const metodosDePagoInfo = document.querySelector('#metodosDePagoInfo');
 const horariosTablaBody = document.querySelector('#horariosTabla');
-//navbar();
+navbar();
 
 let params = new URL(document.location).searchParams; //Se revisa el URL para obtener el ID del producto que queremos mostrar
 let carreta_id = params.get("id"); // Se extrae especificamente el valor de id=
